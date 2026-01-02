@@ -4,11 +4,11 @@
     "name": "بورتريه"
   },
   {
-    "data": "/data/images/media_atfal.json",
-    "name": "اطفال"
-  },
-  {
     "data": "/data/images/media_zfaf.json",
     "name": "زفاف"
+  },
+  {
+    "data": "/data/images/media_atfal.json",
+    "name": "اطفال"
   }
 ]
