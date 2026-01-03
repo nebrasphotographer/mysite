@@ -11,7 +11,7 @@
 <meta property="og:title" content=" نبراس العزي - معرض تصوير">
 <meta property="og:description" content=" مصورة محترفة متخصصة في التصوير الفوتوغرافي والفيديو. خبرة تزيد عن 5 سنوات في تصوير المناسبات والبورتريه والمنتجات. أسعى دائماً لتقديم أفضل جودة وإبداع في كل عمل أقدمه. ">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://nebrasphoto.netlify.app/profile/nebr.jpg">
+<meta property="og:image" content="https://mysite.nebrasphotographer.workers.dev/profile/nebr.jpg">
     
 <title>معرض المصوّر</title>
 
@@ -39,7 +39,7 @@
                     
 
                        <div class="w-12 h-12 rounded-full  border-primary border-1 bg-primary-light/20 flex items-center justify-center">
-                    <img src="profile/logo.png" alt="">
+                    <img src="/profile/logo.png" alt="">
                     </div>
 
 
@@ -491,7 +491,11 @@
        async function renderPhotographerInfo() {
             const PhotographerInfo= await fetchData("photographer_info")
             console.log(PhotographerInfo)
-            document.getElementById('profile-image').src = PhotographerInfo.profile_pic;
+            let pic=PhotographerInfo.profile_pic
+            if (pic.includes("/media/")){
+                pic=pic.replace("/media/","/")
+            }
+            document.getElementById('profile-image').src = pic;
             document.getElementById('photographer-name').textContent = PhotographerInfo.name;
             document.getElementById('photographer-description').textContent = PhotographerInfo.description;
             document.getElementById('photographer-location').textContent = PhotographerInfo.location;
