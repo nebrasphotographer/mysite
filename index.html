@@ -30,9 +30,9 @@
    
 
     <!-- ==================== HEADER ==================== -->
-    <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 header-blur bg-transparent">
-        <div class="container mx-auto px-4">
-            <div class="flex items-center justify-between py-4">
+    <header id="header" class="fixed top-0    left-0 right-0 z-50 transition-all duration-300 header-blur bg-transparent">
+        <div class="container mx-auto px-4 ">
+            <div class="flex items-center justify-between py-2 ">
                 <!-- Logo -->
                 <a href="#home" class="flex items-center gap-3">
                    
@@ -47,7 +47,7 @@
                         <i class="fas fa-camera text-white text-xl"></i>
                     </div> -->
 
-                    <span class="text-xl font-bold text-white" id="header-logo-text">معرض المصوّر</span>
+                    <span class="text-[14px] border-b-primary/50  pb-1 border-b-2 font-bold text-white" id="header-logo-text">معرض المصوّر</span>
                 </a>
 
                 <!-- Desktop Navigation -->
@@ -323,9 +323,10 @@
         const header = document.getElementById('header');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
-                header.classList.add('header-scrolled');
+                 
+                header.classList.add('header-scrolled','border-b-2','rounded-lg','border-b-primary');
             } else {
-                header.classList.remove('header-scrolled');
+                header.classList.remove('header-scrolled','border-b-2','rounded-lg','border-b-primary');
             }
         });
 
