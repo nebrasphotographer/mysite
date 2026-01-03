@@ -386,7 +386,19 @@
 
         async function initHeroCarousel() {
             const Media=await fetchData("all_media","images")
-            const specialMedia=Media.filter(item=>item.special)
+
+            const specialMedia=Media.filter(item=>{
+                
+                if(item.special){
+                    if(item.url.includes("/dist/assets/")){
+                        item.url=item.url.replace("/dist/assets/","/assets/")
+                    }
+
+                    return item
+                }
+
+
+            })
             const featuredMedia = specialMedia.slice(0, 5);
 
             featuredMedia.forEach((item, index) => {

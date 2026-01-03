@@ -261,8 +261,14 @@
                 slide.className = 'carousel-slide relative';
                 // slide.style.backgroundImage=`url(${item.url})`
                 let image=document.createElement("img")
+
+                
+
                 image.classList.add("absolute",'left-0','top-0',"w-full","h-full","backdrop-blur-md",'z-0','object-cover')
                 image.src=item.url
+
+                
+
                 image.style.filter='blur(25px)'
 
                 
@@ -401,7 +407,17 @@
 
             const Media=await fetchData(cleanname,"images")
 
-            const currenMeddia=Media.map(item=>{if (currentCategory==="all"||item.category.includes(currentCategory)){return item}}).filter(item=>item!==undefined);
+            
+            const FixedMedia=Media.map(media=>{
+
+                if(media.url.includes("/dist/assets/")){
+                        media.url=media.url.replace("/dist/assets/","/assets/")
+                    }
+
+                    return media
+            })
+            const currenMeddia=FixedMedia.map(item=>{if (currentCategory==="all"||item.category.includes(currentCategory)){return item}}).filter(item=>item!==undefined);
+           
             updateGallery(currenMeddia);
         }
 
@@ -576,18 +592,26 @@
         // ========== INITIALIZE ==========
         document.addEventListener('DOMContentLoaded', async () => {
             const Media=await fetchData("all_media","images")
+            const FixedMedia=Media.map(media=>{
+
+                if(media.url.includes("/dist/assets/")){
+                        media.url=media.url.replace("/dist/assets/","/assets/")
+                    }
+
+                    return media
+            })
             const PhotographerInfo= await fetchData("photographer_info")
 
             document.getElementById('header-logo-text').textContent = PhotographerInfo.name;
 
             
-            init_filter(Media)
+            init_filter(FixedMedia)
             const all_cat=await getAllCategories()
 
 
-            initHeroCarousel(Media);
-            initCategoryFilters(Media,all_cat);
-           await updateGallery(Media);
+            initHeroCarousel(FixedMedia);
+            initCategoryFilters(FixedMedia,all_cat);
+           await updateGallery(FixedMedia);
             // renderPackages();
             // renderSteps();
             // renderPhotographerInfo();
