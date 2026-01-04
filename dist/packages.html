@@ -328,15 +328,15 @@
                 let isKurimi=account.wallet_name.includes("كريمي")
                 let account_properties={
                     intent_link:isKurimi?"intent://#Intent;package=com.KuraimiBank;":"intent://#Intent;package=com.ahd.jaib;",
-                    fallbackBrowser:`S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3D${isKurimi?"com.KuraimiBank;":"com.ahd.jaib;~"}`,
+                    fallbackBrowser:`S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3D${isKurimi?"com.KuraimiBank;":"com.ahd.jaib;"}`,
                     color:isKurimi?"purple":"red",
                     logo:isKurimi?"kur.png":"jaib.png",
                   
                 }
-
+// ${account_properties.fallbackBrowser}
                 let intent=`
                 
-                <a class="bg-${account_properties.color}-500 text-white rounded-lg p-1 my-1 " href="${account_properties.intent_link}${account_properties.fallbackBrowser}end">
+                <a class="bg-${account_properties.color}-500 text-white rounded-lg p-1 my-1 " href="${account_properties.intent_link}end">
   فتح تطبيق 
 </a>
 
@@ -363,7 +363,7 @@
       <div class="my-2 bg-${color}-50 rounded-lg py-1 px-3">
         <div class="flex justify-between items-center">
             <button onclick="copy('${account.account_number}')"><span class="fa text-${color}-400 fa-copy"></span></button>
-             <span class="text-${color}-700 font-black text-2xl tracking-[0.2em]">${account.account_number}</span>
+             <span class="text-${color}-700 font-black text-xl tracking-[0.2em]">${account.account_number}</span>
         </div>
     ${intent}
       </div>
