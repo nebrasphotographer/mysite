@@ -327,7 +327,7 @@
 
                 let isKurimi=account.wallet_name.includes("كريمي")
                 let account_properties={
-                    intent_link:isKurimi?"intent://#Intent;package=com.KuraimiBank;":"intent://#Intent;package=com.ahd.jaib;",
+                    intent_link:isKurimi?"android-app://com.KuraimiBank":"android-app://com.ahd.jaib",
                     fallbackBrowser:`S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3D${isKurimi?"com.KuraimiBank;":"com.ahd.jaib;"}`,
                     color:isKurimi?"purple":"red",
                     logo:isKurimi?"kur.png":"jaib.png",
@@ -336,7 +336,7 @@
 // ${account_properties.fallbackBrowser}
                 let intent=`
                 
-                <a class="bg-${account_properties.color}-500 text-white rounded-lg p-1 my-1 " href="${account_properties.intent_link}end">
+                <a class="bg-${account_properties.color}-500 text-white rounded-lg p-1 my-1 " href="${account_properties.intent_link}">
   فتح تطبيق 
 </a>
 
