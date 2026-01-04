@@ -1,5 +1,10 @@
 [
   {
+    "type": {
+      "key": "weeding",
+      "name": "الزفاف",
+      "badgeColor": "gold"
+    },
     "title": "الباقه الذهبيه",
     "price": 2500.0,
     "currency": "ريال",
@@ -66,6 +71,11 @@
     "logoIcon": "fa fa-camera"
   },
   {
+    "type": {
+      "key": "birthdays_graduations",
+      "name": "التخرج واعياد الميلاد",
+      "badgeColor": "green"
+    },
     "title": "الباقه",
     "price": 60000.0,
     "currency": "ريال",
@@ -118,6 +128,11 @@
     "logoIcon": "fa fa-home"
   },
   {
+    "type": {
+      "key": "weeding",
+      "name": "الزفاف",
+      "badgeColor": "gold"
+    },
     "title": "باقة فضي",
     "price": 40000.0,
     "currency": "ريال",

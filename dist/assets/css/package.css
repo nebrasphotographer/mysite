@@ -337,12 +337,12 @@
         }
 
         .badge {
-            right: 35%;
+            right: -2px;
             position: absolute;
             top: -3px;
             left: px;
-            background: linear-gradient(135deg, var(--gold) 0%, #c9a227 100%);
-            color: var(--white);
+            /* background: linear-gradient(135deg, var(--gold) 0%, #c9a227 100%); */
+            /* color: var(--white); */
             padding: 8px 16px;
             border-radius: 10px;
             /* margin-bottom: 23px; */

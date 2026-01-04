@@ -296,8 +296,8 @@
 
         .popular-badge {
             position: absolute;
-            top: 0px;
-            right: -13px;
+            top: -6px;
+            right: 32%;
             background: linear-gradient(135deg, #D4A574, #B8895A);
             color: white;
             padding: 8px 16px;
