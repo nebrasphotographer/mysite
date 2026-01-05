@@ -5,6 +5,216 @@
       "name": "الزفاف",
       "badgeColor": "gold"
     },
+    "order": 0,
+    "title": "الباكج الاول",
+    "price": 30000.0,
+    "currency": "ريال",
+    "badge": null,
+    "is_discount": false,
+    "discount_percent": 0,
+    "is_vip": false,
+    "is_popular": false,
+    "details": {
+      "time": "لمدة ساعة",
+      "location": "إب"
+    },
+    "featuresGrid": {
+      "items": [
+        {
+          "title": "الصور",
+          "features": [
+            "صور فقط"
+          ]
+        },
+        {
+          "title": "المميزات",
+          "features": [
+            "تسليم الصور بنفس اليوم داخل فلاش ميموري"
+          ]
+        }
+      ]
+    },
+    "booking": {
+      "title": null,
+      "items": []
+    },
+    "notes": {
+      "title": null,
+      "items": []
+    },
+    "footer": {
+      "text": null,
+      "social": {}
+    },
+    "logoIcon": "fa fa-camera"
+  },
+  {
+    "type": {
+      "key": "birthdays_graduations",
+      "name": "التخرج واعياد الميلاد",
+      "badgeColor": "red"
+    },
+    "order": 0,
+    "title": "الباكج الاول",
+    "price": 15000.0,
+    "currency": "ريال",
+    "badge": null,
+    "is_discount": false,
+    "discount_percent": 0,
+    "is_vip": false,
+    "is_popular": false,
+    "details": {
+      "time": "ساعه واحده",
+      "location": "اب"
+    },
+    "featuresGrid": {
+      "items": [
+        {
+          "title": "الصور",
+          "features": [
+            "تصوير لا محدود"
+          ]
+        },
+        {
+          "title": "المميزات",
+          "features": [
+            "تسليم الصور بنفس اليوم"
+          ]
+        }
+      ]
+    },
+    "booking": {
+      "title": null,
+      "items": []
+    },
+    "notes": {
+      "title": null,
+      "items": []
+    },
+    "footer": {
+      "text": null,
+      "social": {}
+    },
+    "logoIcon": null
+  },
+  {
+    "type": {
+      "key": "weeding",
+      "name": "الزفاف",
+      "badgeColor": "gold"
+    },
+    "order": 1,
+    "title": "الباكج الثاني",
+    "price": 45000.0,
+    "currency": "ريال",
+    "badge": "يوجد عرض",
+    "is_discount": false,
+    "discount_percent": 0,
+    "is_vip": false,
+    "is_popular": false,
+    "details": {
+      "time": "مدة ساعتين(تحديد الوقت على حسب الطلب)",
+      "location": "اب"
+    },
+    "featuresGrid": {
+      "items": [
+        {
+          "title": "الصور",
+          "features": [
+            "لا محدود"
+          ]
+        },
+        {
+          "title": "الفيديو",
+          "features": [
+            "فيديو زفة واحد"
+          ]
+        },
+        {
+          "title": "المميزات",
+          "features": [
+            "تسليم الصور والفيديو بنفس اليوم  داخل فلاش ميموري"
+          ]
+        }
+      ]
+    },
+    "booking": {
+      "title": null,
+      "items": []
+    },
+    "notes": {
+      "title": null,
+      "items": []
+    },
+    "footer": {
+      "text": null,
+      "social": {}
+    },
+    "logoIcon": "fa fa-home"
+  },
+  {
+    "type": {
+      "key": "birthdays_graduations",
+      "name": "التخرج واعياد الميلاد",
+      "badgeColor": "red"
+    },
+    "order": 1,
+    "title": "الباكج الثاني",
+    "price": 25000.0,
+    "currency": "ريال",
+    "badge": null,
+    "is_discount": false,
+    "discount_percent": 0,
+    "is_vip": false,
+    "is_popular": false,
+    "details": {
+      "time": "ساعتين",
+      "location": "اب"
+    },
+    "featuresGrid": {
+      "items": [
+        {
+          "title": "الصور",
+          "features": [
+            "لا محدود"
+          ]
+        },
+        {
+          "title": "الفيديوهات",
+          "features": [
+            "فيديو مونتاج قصير"
+          ]
+        },
+        {
+          "title": "المميزات",
+          "features": [
+            "تعديل صور",
+            "التسليم داخل فلاش ميموري"
+          ]
+        }
+      ]
+    },
+    "booking": {
+      "title": null,
+      "items": []
+    },
+    "notes": {
+      "title": null,
+      "items": []
+    },
+    "footer": {
+      "text": null,
+      "social": {}
+    },
+    "logoIcon": null
+  },
+  {
+    "type": {
+      "key": "weeding",
+      "name": "الزفاف",
+      "badgeColor": "gold"
+    },
+    "order": 2,
     "title": "الباكج الثالث",
     "price": 70000.0,
     "currency": "ريال",
@@ -59,63 +269,12 @@
   },
   {
     "type": {
-      "key": "weeding",
-      "name": "الزفاف",
-      "badgeColor": "gold"
+      "key": "birthdays_graduations",
+      "name": "التخرج واعياد الميلاد",
+      "badgeColor": "red"
     },
-    "title": "الباكج الثاني",
-    "price": 45000.0,
-    "currency": "ريال",
-    "badge": "يوجد عرض",
-    "is_discount": false,
-    "discount_percent": 0,
-    "is_vip": false,
-    "is_popular": false,
-    "details": {
-      "time": "مدة ساعتين(تحديد الوقت على حسب الطلب)",
-      "location": "اب"
-    },
-    "featuresGrid": {
-      "items": [
-        {
-          "title": "الصور",
-          "features": [
-            "لا محدود"
-          ]
-        },
-        {
-          "title": "الفيديو",
-          "features": [
-            "فيديو زفة واحد"
-          ]
-        },
-        {
-          "title": "المميزات",
-          "features": []
-        }
-      ]
-    },
-    "booking": {
-      "title": null,
-      "items": []
-    },
-    "notes": {
-      "title": null,
-      "items": []
-    },
-    "footer": {
-      "text": null,
-      "social": {}
-    },
-    "logoIcon": "fa fa-home"
-  },
-  {
-    "type": {
-      "key": "weeding",
-      "name": "الزفاف",
-      "badgeColor": "gold"
-    },
-    "title": "الباكج الاول",
+    "order": 2,
+    "title": "الباكج الثالث",
     "price": 30000.0,
     "currency": "ريال",
     "badge": null,
@@ -124,16 +283,29 @@
     "is_vip": false,
     "is_popular": false,
     "details": {
-      "time": "لمدة ساعة",
-      "location": "إب"
+      "time": "ساعتين",
+      "location": "اب"
     },
     "featuresGrid": {
       "items": [
         {
+          "title": "الصور",
+          "features": [
+            "تصوير لا محدود"
+          ]
+        },
+        {
+          "title": "الفيديوهات",
+          "features": [
+            "فيديو مونتاج قصير"
+          ]
+        },
+        {
           "title": "المميزات",
           "features": [
-            "تصوير صور فقط",
-            "تسليم الصور بنفس اليوم داخل فلاش ميموري"
+            "تعديل صور",
+            "طباعة 15 صوره مقاس A5",
+            "تسليم الصور داخل فلاش ميموري"
           ]
         }
       ]
@@ -150,7 +322,7 @@
       "text": null,
       "social": {}
     },
-    "logoIcon": "fa fa-camera"
+    "logoIcon": null
   },
   {
     "type": {
@@ -158,6 +330,7 @@
       "name": "الزفاف",
       "badgeColor": "gold"
     },
+    "order": 3,
     "title": "الباكج الرابع",
     "price": 120000.0,
     "currency": "ريال",
@@ -195,165 +368,6 @@
             "تعديل صور",
             "طباعة 30 صوره مقاس A5",
             "تسليم الصور والفيدوهات داخل فلاش ميموري"
-          ]
-        }
-      ]
-    },
-    "booking": {
-      "title": null,
-      "items": []
-    },
-    "notes": {
-      "title": null,
-      "items": []
-    },
-    "footer": {
-      "text": null,
-      "social": {}
-    },
-    "logoIcon": null
-  },
-  {
-    "type": {
-      "key": "birthdays_graduations",
-      "name": "التخرج واعياد الميلاد",
-      "badgeColor": "red"
-    },
-    "title": "الباكج الاول",
-    "price": 15000.0,
-    "currency": "ريال",
-    "badge": null,
-    "is_discount": false,
-    "discount_percent": 0,
-    "is_vip": false,
-    "is_popular": false,
-    "details": {
-      "time": "ساعه واحده",
-      "location": "اب"
-    },
-    "featuresGrid": {
-      "items": [
-        {
-          "title": "الصور",
-          "features": [
-            "تصوير لا محدود"
-          ]
-        },
-        {
-          "title": "المميزات",
-          "features": [
-            "تسليم الصور بنفس اليوم"
-          ]
-        }
-      ]
-    },
-    "booking": {
-      "title": null,
-      "items": []
-    },
-    "notes": {
-      "title": null,
-      "items": []
-    },
-    "footer": {
-      "text": null,
-      "social": {}
-    },
-    "logoIcon": null
-  },
-  {
-    "type": {
-      "key": "birthdays_graduations",
-      "name": "التخرج واعياد الميلاد",
-      "badgeColor": "red"
-    },
-    "title": "الباكج الثاني",
-    "price": 25000.0,
-    "currency": "ريال",
-    "badge": null,
-    "is_discount": false,
-    "discount_percent": 0,
-    "is_vip": false,
-    "is_popular": false,
-    "details": {
-      "time": "ساعتين",
-      "location": "اب"
-    },
-    "featuresGrid": {
-      "items": [
-        {
-          "title": "الصور",
-          "features": [
-            "لا محدود"
-          ]
-        },
-        {
-          "title": "الفيديوهات",
-          "features": [
-            "فيديو مونتاج قصير"
-          ]
-        },
-        {
-          "title": "المميزات",
-          "features": [
-            "تعديل صور",
-            "التسليم داخل فلاش ميموري"
-          ]
-        }
-      ]
-    },
-    "booking": {
-      "title": null,
-      "items": []
-    },
-    "notes": {
-      "title": null,
-      "items": []
-    },
-    "footer": {
-      "text": null,
-      "social": {}
-    },
-    "logoIcon": null
-  },
-  {
-    "type": {
-      "key": "birthdays_graduations",
-      "name": "التخرج واعياد الميلاد",
-      "badgeColor": "red"
-    },
-    "title": "الباكج الثالث",
-    "price": 30000.0,
-    "currency": "ريال",
-    "badge": null,
-    "is_discount": false,
-    "discount_percent": 0,
-    "is_vip": false,
-    "is_popular": false,
-    "details": {
-      "time": "ساعتين",
-      "location": "اب"
-    },
-    "featuresGrid": {
-      "items": [
-        {
-          "title": "الصور",
-          "features": [
-            "تصوير لا محدود"
-          ]
-        },
-        {
-          "title": "الفيديوهات",
-          "features": [
-            "فيديو مونتاج قصير"
-          ]
-        },
-        {
-          "title": "المميزات",
-          "features": [
-            "تعديل صور",
-            "طباعة 15 صوره مقاس A5",
-            "تسليم الصور داخل فلاش ميموري"
           ]
         }
       ]

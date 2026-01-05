@@ -1,64 +1,1122 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="ar" dir="rtl" class="dark"><head><meta name="x-poe-datastore-behavior" content="local_only"><meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' data: blob: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://code.jquery.com https://unpkg.com https://d3js.org https://threejs.org https://cdn.plot.ly https://stackpath.bootstrapcdn.com https://maps.googleapis.com https://cdn.tailwindcss.com https://ajax.googleapis.com https://kit.fontawesome.com https://cdn.datatables.net https://maxcdn.bootstrapcdn.com https://code.highcharts.com https://tako-static-assets-production.s3.amazonaws.com https://www.youtube.com https://fonts.googleapis.com https://fonts.gstatic.com https://pfst.cf2.poecdn.net https://puc.poecdn.net https://i.imgur.com https://wikimedia.org https://*.icons8.com https://*.giphy.com https://picsum.photos https://images.unsplash.com; frame-src 'self' https://www.youtube.com https://trytako.com; child-src 'self'; manifest-src 'self'; worker-src 'self'; upgrade-insecure-requests; block-all-mixed-content;">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/output2.min.css">
-</head>
-<body>
     
-                
-<div class=" my-2 px-1 flex flex-col md:flex-row gap-4" id="account-container"><div class="mb-4 pb-2 flex justify-between w-full flex-col md:flex-row gap-10">
+    <meta property="og:title" content=" نبراس العزي - معرض تصوير">
+<meta property="og:description" content=" مصورة محترفة متخصصة في التصوير الفوتوغرافي والفيديو. خبرة تزيد عن 5 سنوات في تصوير المناسبات والبورتريه والمنتجات. أسعى دائماً لتقديم أفضل جودة وإبداع في كل عمل أقدمه. ">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://mysite.nebrasphotographer.workers.dev/profile/nebr.jpg">
+    <meta name="theme-color" content="#3B6E74">
+    <script src="https://cdn.tailwindcss.com"></script>
 
- 
-            
-<div>
-<div class="text-primary-light font-bold my-1">طريقة الحجز:</div>
-<ul classe="mb-4"> 
-<li class="text-[12px]"> رسالة تحتوي على تاريخ المناسبة مع موقع المناسبة</li>
-<li class="text-[12px]">
-تسليم عربون نص المبلغ عبر حسابات</li>
-
-<li>
-<div class="relative mt-1 w-full max-w-md bg-white border-4 border-purple-700 rounded-2xl overflow-hidden shadow-2xl flex flex-row-reverse pl-2 pr-1 font-['Tajawal']" dir="rtl">
     
-    <div class="w-1/3 flex flex-col items-center justify-center border-l-2 border-gray-100 pl-2">
-      <div class="bg-white p-1 border-2 border-purple-200 rounded-lg">
-        <img src="assets/logo/kur.png" alt="QR Code" class="w-20 h-20">
-      </div>
-    </div>
+    
+    <title>معرض المصوّر</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&amp;display=swap" rel="stylesheet">
 
-    <div class="w-2/3 pr-1 flex flex-col justify-between text-right">
-      <div>
-        <h2 class="text-purple-800 my-1 text-lg font-bold mb-1">حساب كريمي</h2>
-      </div>
+   <link rel="stylesheet" href="assets/css/package.css">
+   <link rel="stylesheet" href="assets/css/output2.min.css">
 
-      <div class="my-2 bg-purple-50 rounded-lg py-1 px-3">
-        <div class="flex justify-between items-center">
-            <button onclick="copy('3050858439')"><span class="fa text-purple-400 fa-copy"></span></button>
-             <span class="text-purple-700 font-black text-xl tracking-[0.2em]">3050858439</span>
-        </div>
+   
   
+<body class="dark bg-black text-white min-h-screen">
+    <script src="assets/js/main.js"></script>
+
+
+    <!-- ==================== DATA ==================== -->
+    <script>
+
+        // const PhotographerInfo = fetchData('photographer');
+          
+
+        // const PhotographerInfo = {
+        //     name: "نبراس العزي",
+        //     phone: "+967772024038",
+        //     age: "23",
+        //     address: "إب - اليمن",
+        //     location: "اب",
+        //     whatsapp: "+967772024038",
+        //     instagram: "ahmed_photographer",
+        //     facebook: "ahmed.photographer",
+        //     email: "ahmed@photography.com",
+        //     profile_pic: "nebras.jpg",
+        //     description: "مصور محترف متخصص في التصوير الفوتوغرافي والفيديو. خبرة تزيد عن 10 سنوات في تصوير المناسبات والبورتريه والمنتجات. أسعى دائماً لتقديم أفضل جودة وإبداع في كل عمل أقدمه."
+        // };
+
+        // الباقات
+
+        // const Packages = [
+        //     {
+        //         id: 1,
+        //         name: "الباقة الأساسية",
+        //         price: 500,
+        //         currency: "ريال",
+        //         features: ["جلسة تصوير ساعة واحدة", "10 صور معدلة", "تسليم خلال 3 أيام", "صيغة عالية الجودة"],
+        //         isPopular: false,
+        //         isVip: false,
+        //         isDiscount: false,
+        //         discount_percent: 0,
+        //         image: null
+        //     },
+        //     {
+        //         id: 2,
+        //         name: "الباقة المميزة",
+        //         price: 1000,
+        //         currency: "ريال",
+        //         features: ["جلسة تصوير ساعتين", "25 صور معدلة", "تسليم خلال يومين", "ألبوم رقمي", "3 لوكيشنات"],
+        //         isPopular: true,
+        //         isVip: false,
+        //         isDiscount: true,
+        //         discount_percent: 15,
+        //         image: null
+        //     },
+        //     {
+        //         id: 3,
+        //         name: "باقة VIP",
+        //         price: 2500,
+        //         currency: "ريال",
+        //         features: ["جلسة تصوير 4 ساعات", "50 صور معدلة", "فيديو قصير", "تسليم خلال 24 ساعة", "ألبوم مطبوع", "5 لوكيشنات", "مكياج وتجهيز"],
+        //         isPopular: false,
+        //         isVip: true,
+        //         isDiscount: false,
+        //         discount_percent: 0,
+        //         image: null
+        //     },
+        //     {
+        //         id: 4,
+        //         name: "باقة المناسبات",
+        //         price: 3000,
+        //         currency: "ريال",
+        //         features: ["تغطية كاملة للمناسبة", "100+ صورة معدلة", "فيديو احترافي", "تسليم خلال أسبوع", "ألبوم فاخر"],
+        //         isPopular: false,
+        //         isVip: false,
+        //         isDiscount: true,
+        //         discount_percent: 20,
+        //         image: null
+        //     }
+        // ];
+
+    </script>
+
+    <!-- ==================== HEADER ==================== -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 header-blur bg-transparent">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between py-2">
+                <!-- Logo -->
+                <a href="index.html#home" class="flex items-center gap-3">
+                   
+                   
+                       <div class="w-12 h-12 rounded-full  border-primary border-1 bg-primary-light/20 flex items-center justify-center">
+                    <img src="/profile/logo.png" alt="">
+                    </div>
+
+
+                    <!-- <div class="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center">
+                        <i class="fas fa-camera text-white text-xl"></i>
+                    </div>
+                    -->
+                   
+                    <span class="text-[14px] border-b-primary/50 pb-1  border-b-2 font-bold text-white" id="header-logo-text">نبراس العزي</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center gap-8">
+                    <a href="index.html#home" class="nav-link text-white/90 hover:text-white">الرئيسية</a>
+                    <a href="gallery.html" class="nav-link text-white/90 hover:text-white">المعرض</a>
+                    <a href="packages.html" class="nav-link text-white/90 hover:text-white">الباقات</a>
+                    <a href="index.html#how-we-work" class="nav-link text-white/90 hover:text-white">كيف نعمل</a>
+                    <a href="index.html#about" class="nav-link text-white/90 hover:text-white">عن المصور</a>
+                    <a href="index.html#policies" class="nav-link text-white/90 hover:text-white">الشروط</a>
+                    <a href="index.html#contact" class="nav-link text-white/90 hover:text-white">تواصل</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden text-white text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-overlay" class="mobile-overlay"></div>
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="flex justify-between items-center mb-8">
+            <span class="text-xl font-bold">القائمة</span>
+            <button id="close-mobile-menu" class="text-2xl text-white/70 hover:text-white">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="flex flex-col gap-4">
+            <a href="index.html#home" class="mobile-nav-link text-lg py-2 border-b border-white/10">الرئيسية</a>
+            <a href="gallery.html" class="mobile-nav-link text-lg py-2 border-b border-white/10">المعرض</a>
+            <a href="#" class="mobile-nav-link text-lg py-2 border-b border-white/10">الباقات</a>
+            <a href="index.html#how-we-work" class="mobile-nav-link text-lg py-2 border-b border-white/10">كيف نعمل</a>
+            <a href="index.html#about" class="mobile-nav-link text-lg py-2 border-b border-white/10">عن المصور</a>
+            <a href="index.html#policies" class="mobile-nav-link text-lg py-2 border-b border-white/10">الشروط</a>
+            <a href="index.html#contact" class="mobile-nav-link text-lg py-2 border-b border-white/10">تواصل</a>
+        </nav>
+    </div>
+
+
+    <!-- ==================== PACKAGES SECTION ==================== -->
+    <section id="packages" class="py-20 relative">
+        <div class="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent"></div>
+        <div class="container px-4 md:mx-auto md:px-4 relative z-10">
+           <div class=" my-2 px-1 flex flex-col md:flex-row gap-4" id="account-container"></div>
+
+            <!-- Section Header -->
+            <div class="text-center mb-12">
+                <h2 class="section-title text-3xl md:text-4xl font-bold mb-4">باقات التصوير</h2>
+                <p class="text-white/60 mt-6">اختر الباقة المناسبة لاحتياجاتك</p>
+            </div>
+
+
+
+
+
+
+
+
+            <!-- Packages Grid -->
+             <div class="my-4" id="packages-tabs"><button data-key="all" class="
+            px-2 py-1 mx-1 rounded-lg border
+            bg-primary text-white
+            transition
+        ">الكل</button><button data-key="weeding" class="
+            px-2 py-1 mx-1 rounded-lg border
+            border-primary/40 text-white/70 hover:bg-primary/20
+            transition
+        ">الزفاف</button><button data-key="birthdays_graduations" class="
+            px-2 py-1 mx-1 rounded-lg border
+            border-primary/40 text-white/70 hover:bg-primary/20
+            transition
+        ">التخرج واعياد الميلاد</button></div>
+            <div id="packages-grid" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6"><div class="package-card flex justify-between flex-col overflow-hidden">
+                    <div class="badge bg-gold/70 text-white ">الزفاف</div>
+
+                    
+                    <div class="card-header">
+                    
+                    
+
+                        <i class="fas fa fa-camera logo-watermark"></i>
+                        <h2 class="package-title">الباكج الاول</h2>
+
+
+                        <div class="package-price">
+                            <span class="price-value  ">٣٠٬٠٠٠</span>
+                            <span class="price-currency ">ريال</span>
+
+                                                        
+
+                        </div>
+
+                    <div class="card-details rounded-lg  ">
+                        <div class="detail-item  ">
+                            <i class="far fa-clock"></i>
+                            <span>لمدة ساعة</span>
+                        </div>
+                        <div class="detail-item ">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>إب</span>
+                        </div>
+                    </div>
+
+                    </div>
+
+                    
+
+                    <div class="my-2 flex-1 max-h-[268px] rounded-lg overflow-y-auto">
+
+                        <div class="grid grid-cols-2  my-2 px-1">
+                        
+                        <div class="  bg-primary/10 ">
+                            
+                            <div class="text-[16px] max-h-[40px] h-[40px] min-h-[40px] p-2 overflow-hidden  bg-primary/90 font-bold text-right text-white">الصور</div>
+                            <div class="text-gray-600 text-[12px]  break-words overflow-wrap-anywhere text-sm ">
+                    <div class="flex flex-col">
+                        
+                            <div class=" p-1 flex gap-2 text-white text-right highlight">
+                               <div>-</div> <div class=" flex-1 break-words overflow-wrap-anywhere">صور فقط</div> 
+                            </div>
+                        
+                    </div>
+                    </div>
+                        
+                        </div>
+      
+                        <div class="  bg-primary/20 ">
+                            
+                            <div class="text-[16px] max-h-[40px] h-[40px] min-h-[40px] p-2 overflow-hidden  bg-primary font-bold text-right text-white">المميزات</div>
+                            <div class="text-gray-600 text-[12px]  break-words overflow-wrap-anywhere text-sm ">
+                    <div class="flex flex-col">
+                        
+                            <div class=" p-1 flex gap-2 text-white text-right highlight">
+                               <div>-</div> <div class=" flex-1 break-words overflow-wrap-anywhere">تسليم الصور بنفس اليوم داخل فلاش ميموري</div> 
+                            </div>
+                        
+                    </div>
+                    </div>
+                        
+                        </div>
+      
       </div>
 
-      <div class="text-[11px] text-purple-900 font-semibold space-y-1">
-        <div class="flex items-center gap-2">
-           <span class="text-purple-400">●</span>
-           <span>الاسم: نبراس عبدالرحمن احمد العزي</span>
-        </div>
+                        <div class="info-section grid  grid-cols-1 gap-2 mx-2">
+                           
+                        
+                        
+                            
+                           
+                        </div>     
+                    </div>
+
+                    <div class="card-footer flex flex-col gap-3">
+                        <button onclick="orderPackage(undefined)" class="w-full bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 rounded-lg flex items-center justify-center gap-2 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                            <i class="fas fa-shopping-cart"></i>
+                            طلب الباقة
+                        </button>
+                        <div class="footer-content hidden justify-between w-full">
+                            <span class="footer-text text-xs">لطلب الباقه عبر </span>
+                            <div class="social-links">
+                                
+                        <a href="sms:967775393663?body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D9%86%D8%A8%D8%B1%D8%A7%D8%B3%20%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B7%D9%84%D8%A8%3A%20(%D8%A7%D9%84%D8%A8%D8%A7%D9%83%D8%AC%20%D8%A7%D9%84%D8%A7%D9%88%D9%84)%0A%D8%A7%D9%84%D8%B3%D8%B9%D8%B1%3A%2030000%20%D8%B1%D9%8A%D8%A7%D9%84%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%D9%85%D9%85%D9%8A%D8%B2%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A9%3A%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A*(%D8%A7%D9%84%D8%B5%D9%88%D8%B1)*%3A%0A%20-%20%D8%B5%D9%88%D8%B1%20%D9%81%D9%82%D8%B7%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A*(%D8%A7%D9%84%D9%85%D9%85%D9%8A%D8%B2%D8%A7%D8%AA)*%3A%0A%20-%20%D8%AA%D8%B3%D9%84%D9%8A%D9%85%20%D8%A7%D9%84%D8%B5%D9%88%D8%B1%20%D8%A8%D9%86%D9%81%D8%B3%20%D8%A7%D9%84%D9%8A%D9%88%D9%85%20%D8%AF%D8%A7%D8%AE%D9%84%20%D9%81%D9%84%D8%A7%D8%B4%20%D9%85%D9%8A%D9%85%D9%88%D8%B1%D9%8A%0A" class="social-link" title="sms">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    
+                        <a href="https://wa.me/967775393663?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D9%86%D8%A8%D8%B1%D8%A7%D8%B3%20%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B7%D9%84%D8%A8%3A%20(%D8%A7%D9%84%D8%A8%D8%A7%D9%83%D8%AC%20%D8%A7%D9%84%D8%A7%D9%88%D9%84)%0A%D8%A7%D9%84%D8%B3%D8%B9%D8%B1%3A%2030000%20%D8%B1%D9%8A%D8%A7%D9%84%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%D9%85%D9%85%D9%8A%D8%B2%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A9%3A%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A*(%D8%A7%D9%84%D8%B5%D9%88%D8%B1)*%3A%0A%20-%20%D8%B5%D9%88%D8%B1%20%D9%81%D9%82%D8%B7%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A*(%D8%A7%D9%84%D9%85%D9%85%D9%8A%D8%B2%D8%A7%D8%AA)*%3A%0A%20-%20%D8%AA%D8%B3%D9%84%D9%8A%D9%85%20%D8%A7%D9%84%D8%B5%D9%88%D8%B1%20%D8%A8%D9%86%D9%81%D8%B3%20%D8%A7%D9%84%D9%8A%D9%88%D9%85%20%D8%AF%D8%A7%D8%AE%D9%84%20%D9%81%D9%84%D8%A7%D8%B4%20%D9%85%D9%8A%D9%85%D9%88%D8%B1%D9%8A%0A" class="social-link" title="whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    
+                        <a href="tel:775393663" class="social-link" title="phone">
+                            <i class="fa fa-phone"></i>
+                        </a>
+                    
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="package-card flex justify-between flex-col overflow-hidden">
+                    <div class="badge bg-red-500 text-white ">التخرج واعياد الميلاد</div>
+
+                    
+                    <div class="card-header">
+                    
+                    
+
+                        <i class="fas null logo-watermark"></i>
+                        <h2 class="package-title">الباكج الاول</h2>
+
+
+                        <div class="package-price">
+                            <span class="price-value  ">١٥٬٠٠٠</span>
+                            <span class="price-currency ">ريال</span>
+
+                                                        
+
+                        </div>
+
+                    <div class="card-details rounded-lg  ">
+                        <div class="detail-item  ">
+                            <i class="far fa-clock"></i>
+                            <span>ساعه واحده</span>
+                        </div>
+                        <div class="detail-item ">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>اب</span>
+                        </div>
+                    </div>
+
+                    </div>
+
+                    
+
+                    <div class="my-2 flex-1 max-h-[268px] rounded-lg overflow-y-auto">
+
+                        <div class="grid grid-cols-2  my-2 px-1">
+                        
+                        <div class="  bg-primary/10 ">
+                            
+                            <div class="text-[16px] max-h-[40px] h-[40px] min-h-[40px] p-2 overflow-hidden  bg-primary/90 font-bold text-right text-white">الصور</div>
+                            <div class="text-gray-600 text-[12px]  break-words overflow-wrap-anywhere text-sm ">
+                    <div class="flex flex-col">
+                        
+                            <div class=" p-1 flex gap-2 text-white text-right highlight">
+                               <div>-</div> <div class=" flex-1 break-words overflow-wrap-anywhere">تصوير لا محدود</div> 
+                            </div>
+                        
+                    </div>
+                    </div>
+                        
+                        </div>
       
-    </div>
-    </div>
+                        <div class="  bg-primary/20 ">
+                            
+                            <div class="text-[16px] max-h-[40px] h-[40px] min-h-[40px] p-2 overflow-hidden  bg-primary font-bold text-right text-white">المميزات</div>
+                            <div class="text-gray-600 text-[12px]  break-words overflow-wrap-anywhere text-sm ">
+                    <div class="flex flex-col">
+                        
+                            <div class=" p-1 flex gap-2 text-white text-right highlight">
+                               <div>-</div> <div class=" flex-1 break-words overflow-wrap-anywhere">تسليم الصور بنفس اليوم</div> 
+                            </div>
+                        
+                    </div>
+                    </div>
+                        
+                        </div>
+      
+      </div>
 
-    <div class="absolute top-0 right-0 h-2 w-1/2 bg-purple-700 rounded-bl-full"></div>
-  </div>
+                        <div class="info-section grid  grid-cols-1 gap-2 mx-2">
+                           
+                        
+                        
+                            
+                           
+                        </div>     
+                    </div>
 
-                
-                <div>أو:</div>
+                    <div class="card-footer flex flex-col gap-3">
+                        <button onclick="orderPackage(undefined)" class="w-full bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 rounded-lg flex items-center justify-center gap-2 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                            <i class="fas fa-shopping-cart"></i>
+                            طلب الباقة
+                        </button>
+                        <div class="footer-content hidden justify-between w-full">
+                            <span class="footer-text text-xs">لطلب الباقه عبر </span>
+                            <div class="social-links">
+                                
+                        <a href="sms:967775393663?body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D9%86%D8%A8%D8%B1%D8%A7%D8%B3%20%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B7%D9%84%D8%A8%3A%20(%D8%A7%D9%84%D8%A8%D8%A7%D9%83%D8%AC%20%D8%A7%D9%84%D8%A7%D9%88%D9%84)%0A%D8%A7%D9%84%D8%B3%D8%B9%D8%B1%3A%2015000%20%D8%B1%D9%8A%D8%A7%D9%84%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%D9%85%D9%85%D9%8A%D8%B2%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A9%3A%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A*(%D8%A7%D9%84%D8%B5%D9%88%D8%B1)*%3A%0A%20-%20%D8%AA%D8%B5%D9%88%D9%8A%D8%B1%20%D9%84%D8%A7%20%D9%85%D8%AD%D8%AF%D9%88%D8%AF%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A*(%D8%A7%D9%84%D9%85%D9%85%D9%8A%D8%B2%D8%A7%D8%AA)*%3A%0A%20-%20%D8%AA%D8%B3%D9%84%D9%8A%D9%85%20%D8%A7%D9%84%D8%B5%D9%88%D8%B1%20%D8%A8%D9%86%D9%81%D8%B3%20%D8%A7%D9%84%D9%8A%D9%88%D9%85%0A" class="social-link" title="sms">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    
+                        <a href="https://wa.me/967775393663?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D9%86%D8%A8%D8%B1%D8%A7%D8%B3%20%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B7%D9%84%D8%A8%3A%20(%D8%A7%D9%84%D8%A8%D8%A7%D9%83%D8%AC%20%D8%A7%D9%84%D8%A7%D9%88%D9%84)%0A%D8%A7%D9%84%D8%B3%D8%B9%D8%B1%3A%2015000%20%D8%B1%D9%8A%D8%A7%D9%84%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%D9%85%D9%85%D9%8A%D8%B2%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A9%3A%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A*(%D8%A7%D9%84%D8%B5%D9%88%D8%B1)*%3A%0A%20-%20%D8%AA%D8%B5%D9%88%D9%8A%D8%B1%20%D9%84%D8%A7%20%D9%85%D8%AD%D8%AF%D9%88%D8%AF%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A*(%D8%A7%D9%84%D9%85%D9%85%D9%8A%D8%B2%D8%A7%D8%AA)*%3A%0A%20-%20%D8%AA%D8%B3%D9%84%D9%8A%D9%85%20%D8%A7%D9%84%D8%B5%D9%88%D8%B1%20%D8%A8%D9%86%D9%81%D8%B3%20%D8%A7%D9%84%D9%8A%D9%88%D9%85%0A" class="social-link" title="whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    
+                        <a href="tel:775393663" class="social-link" title="phone">
+                            <i class="fa fa-phone"></i>
+                        </a>
+                    
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="package-card flex justify-between flex-col overflow-hidden">
+                    <div class="badge bg-gold/70 text-white ">الزفاف</div>
+
+                    
+                    <div class="card-header">
+                    
+                    
+
+                        <i class="fas fa fa-home logo-watermark"></i>
+                        <h2 class="package-title">الباكج الثاني</h2>
+
+
+                        <div class="package-price">
+                            <span class="price-value  ">٤٥٬٠٠٠</span>
+                            <span class="price-currency ">ريال</span>
+
+                                                        
+
+                        </div>
+
+                    <div class="card-details rounded-lg  ">
+                        <div class="detail-item  ">
+                            <i class="far fa-clock"></i>
+                            <span>مدة ساعتين(تحديد الوقت على حسب الطلب)</span>
+                        </div>
+                        <div class="detail-item ">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>اب</span>
+                        </div>
+                    </div>
+
+                    </div>
+
+                    
+
+                    <div class="my-2 flex-1 max-h-[268px] rounded-lg overflow-y-auto">
+
+                        <div class="grid grid-cols-3  my-2 px-1">
+                        
+                        <div class="  bg-primary/10 ">
+                            
+                            <div class="text-[16px] max-h-[40px] h-[40px] min-h-[40px] p-2 overflow-hidden  bg-primary/90 font-bold text-right text-white">الصور</div>
+                            <div class="text-gray-600 text-[12px]  break-words overflow-wrap-anywhere text-sm ">
+                    <div class="flex flex-col">
+                        
+                            <div class=" p-1 flex gap-2 text-white text-right highlight">
+                               <div>-</div> <div class=" flex-1 break-words overflow-wrap-anywhere">لا محدود</div> 
+                            </div>
+                        
+                    </div>
+                    </div>
+                        
+                        </div>
+      
+                        <div class="  bg-primary/20 ">
+                            
+                            <div class="text-[16px] max-h-[40px] h-[40px] min-h-[40px] p-2 overflow-hidden  bg-primary font-bold text-right text-white">الفيديو</div>
+                            <div class="text-gray-600 text-[12px]  break-words overflow-wrap-anywhere text-sm ">
+                    <div class="flex flex-col">
+                        
+                            <div class=" p-1 flex gap-2 text-white text-right highlight">
+                               <div>-</div> <div class=" flex-1 break-words overflow-wrap-anywhere">فيديو زفة واحد</div> 
+                            </div>
+                        
+                    </div>
+                    </div>
+                        
+                        </div>
+      
+                        <div class="  bg-primary/10 ">
+                            
+                            <div class="text-[16px] max-h-[40px] h-[40px] min-h-[40px] p-2 overflow-hidden  bg-primary/90 font-bold text-right text-white">المميزات</div>
+                            <div class="text-gray-600 text-[12px]  break-words overflow-wrap-anywhere text-sm ">
+                    <div class="flex flex-col">
+                        
+                            <div class=" p-1 flex gap-2 text-white text-right highlight">
+                               <div>-</div> <div class=" flex-1 break-words overflow-wrap-anywhere">تسليم الصور والفيديو بنفس اليوم  داخل فلاش ميموري</div> 
+                            </div>
+                        
+                    </div>
+                    </div>
+                        
+                        </div>
+      
+      </div>
+
+                        <div class="info-section grid  grid-cols-1 gap-2 mx-2">
+                           
+                        
+                        
+                            
+                           
+                        </div>     
+                    </div>
+
+                    <div class="card-footer flex flex-col gap-3">
+                        <button onclick="orderPackage(undefined)" class="w-full bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 rounded-lg flex items-center justify-center gap-2 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                            <i class="fas fa-shopping-cart"></i>
+                            طلب الباقة
+                        </button>
+                        <div class="footer-content hidden justify-between w-full">
+                            <span class="footer-text text-xs">لطلب الباقه عبر </span>
+                            <div class="social-links">
+                                
+                        <a href="sms:967775393663?body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D9%86%D8%A8%D8%B1%D8%A7%D8%B3%20%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B7%D9%84%D8%A8%3A%20(%D8%A7%D9%84%D8%A8%D8%A7%D9%83%D8%AC%20%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A)%0A%D8%A7%D9%84%D8%B3%D8%B9%D8%B1%3A%2045000%20%D8%B1%D9%8A%D8%A7%D9%84%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%D9%85%D9%85%D9%8A%D8%B2%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A9%3A%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A*(%D8%A7%D9%84%D8%B5%D9%88%D8%B1)*%3A%0A%20-%20%D9%84%D8%A7%20%D9%85%D8%AD%D8%AF%D9%88%D8%AF%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A*(%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88)*%3A%0A%20-%20%D9%81%D9%8A%D8%AF%D9%8A%D9%88%20%D8%B2%D9%81%D8%A9%20%D9%88%D8%A7%D8%AD%D8%AF%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A*(%D8%A7%D9%84%D9%85%D9%85%D9%8A%D8%B2%D8%A7%D8%AA)*%3A%0A%20-%20%D8%AA%D8%B3%D9%84%D9%8A%D9%85%20%D8%A7%D9%84%D8%B5%D9%88%D8%B1%20%D9%88%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88%20%D8%A8%D9%86%D9%81%D8%B3%20%D8%A7%D9%84%D9%8A%D9%88%D9%85%20%20%D8%AF%D8%A7%D8%AE%D9%84%20%D9%81%D9%84%D8%A7%D8%B4%20%D9%85%D9%8A%D9%85%D9%88%D8%B1%D9%8A%0A" class="social-link" title="sms">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    
+                        <a href="https://wa.me/967775393663?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D9%86%D8%A8%D8%B1%D8%A7%D8%B3%20%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B7%D9%84%D8%A8%3A%20(%D8%A7%D9%84%D8%A8%D8%A7%D9%83%D8%AC%20%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A)%0A%D8%A7%D9%84%D8%B3%D8%B9%D8%B1%3A%2045000%20%D8%B1%D9%8A%D8%A7%D9%84%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%D9%85%D9%85%D9%8A%D8%B2%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A9%3A%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A*(%D8%A7%D9%84%D8%B5%D9%88%D8%B1)*%3A%0A%20-%20%D9%84%D8%A7%20%D9%85%D8%AD%D8%AF%D9%88%D8%AF%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A*(%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88)*%3A%0A%20-%20%D9%81%D9%8A%D8%AF%D9%8A%D9%88%20%D8%B2%D9%81%D8%A9%20%D9%88%D8%A7%D8%AD%D8%AF%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A*(%D8%A7%D9%84%D9%85%D9%85%D9%8A%D8%B2%D8%A7%D8%AA)*%3A%0A%20-%20%D8%AA%D8%B3%D9%84%D9%8A%D9%85%20%D8%A7%D9%84%D8%B5%D9%88%D8%B1%20%D9%88%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88%20%D8%A8%D9%86%D9%81%D8%B3%20%D8%A7%D9%84%D9%8A%D9%88%D9%85%20%20%D8%AF%D8%A7%D8%AE%D9%84%20%D9%81%D9%84%D8%A7%D8%B4%20%D9%85%D9%8A%D9%85%D9%88%D8%B1%D9%8A%0A" class="social-link" title="whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    
+                        <a href="tel:775393663" class="social-link" title="phone">
+                            <i class="fa fa-phone"></i>
+                        </a>
+                    
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="package-card flex justify-between flex-col overflow-hidden">
+                    <div class="badge bg-red-500 text-white ">التخرج واعياد الميلاد</div>
+
+                    
+                    <div class="card-header">
+                    
+                    
+
+                        <i class="fas null logo-watermark"></i>
+                        <h2 class="package-title">الباكج الثاني</h2>
+
+
+                        <div class="package-price">
+                            <span class="price-value  ">٢٥٬٠٠٠</span>
+                            <span class="price-currency ">ريال</span>
+
+                                                        
+
+                        </div>
+
+                    <div class="card-details rounded-lg  ">
+                        <div class="detail-item  ">
+                            <i class="far fa-clock"></i>
+                            <span>ساعتين</span>
+                        </div>
+                        <div class="detail-item ">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>اب</span>
+                        </div>
+                    </div>
+
+                    </div>
+
+                    
+
+                    <div class="my-2 flex-1 max-h-[268px] rounded-lg overflow-y-auto">
+
+                        <div class="grid grid-cols-3  my-2 px-1">
+                        
+                        <div class="  bg-primary/10 ">
+                            
+                            <div class="text-[16px] max-h-[40px] h-[40px] min-h-[40px] p-2 overflow-hidden  bg-primary/90 font-bold text-right text-white">الصور</div>
+                            <div class="text-gray-600 text-[12px]  break-words overflow-wrap-anywhere text-sm ">
+                    <div class="flex flex-col">
+                        
+                            <div class=" p-1 flex gap-2 text-white text-right highlight">
+                               <div>-</div> <div class=" flex-1 break-words overflow-wrap-anywhere">لا محدود</div> 
+                            </div>
+                        
+                    </div>
+                    </div>
+                        
+                        </div>
+      
+                        <div class="  bg-primary/20 ">
+                            
+                            <div class="text-[16px] max-h-[40px] h-[40px] min-h-[40px] p-2 overflow-hidden  bg-primary font-bold text-right text-white">الفيديوهات</div>
+                            <div class="text-gray-600 text-[12px]  break-words overflow-wrap-anywhere text-sm ">
+                    <div class="flex flex-col">
+                        
+                            <div class=" p-1 flex gap-2 text-white text-right highlight">
+                               <div>-</div> <div class=" flex-1 break-words overflow-wrap-anywhere">فيديو مونتاج قصير</div> 
+                            </div>
+                        
+                    </div>
+                    </div>
+                        
+                        </div>
+      
+                        <div class="  bg-primary/10 ">
+                            
+                            <div class="text-[16px] max-h-[40px] h-[40px] min-h-[40px] p-2 overflow-hidden  bg-primary/90 font-bold text-right text-white">المميزات</div>
+                            <div class="text-gray-600 text-[12px]  break-words overflow-wrap-anywhere text-sm ">
+                    <div class="flex flex-col">
+                        
+                            <div class=" p-1 flex gap-2 text-white text-right highlight">
+                               <div>-</div> <div class=" flex-1 break-words overflow-wrap-anywhere">تعديل صور</div> 
+                            </div>
+                        
+                            <div class=" p-1 flex gap-2 text-white text-right ">
+                               <div>-</div> <div class=" flex-1 break-words overflow-wrap-anywhere">التسليم داخل فلاش ميموري</div> 
+                            </div>
+                        
+                    </div>
+                    </div>
+                        
+                        </div>
+      
+      </div>
+
+                        <div class="info-section grid  grid-cols-1 gap-2 mx-2">
+                           
+                        
+                        
+                            
+                           
+                        </div>     
+                    </div>
+
+                    <div class="card-footer flex flex-col gap-3">
+                        <button onclick="orderPackage(undefined)" class="w-full bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 rounded-lg flex items-center justify-center gap-2 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                            <i class="fas fa-shopping-cart"></i>
+                            طلب الباقة
+                        </button>
+                        <div class="footer-content hidden justify-between w-full">
+                            <span class="footer-text text-xs">لطلب الباقه عبر </span>
+                            <div class="social-links">
+                                
+                        <a href="sms:967775393663?body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D9%86%D8%A8%D8%B1%D8%A7%D8%B3%20%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B7%D9%84%D8%A8%3A%20(%D8%A7%D9%84%D8%A8%D8%A7%D9%83%D8%AC%20%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A)%0A%D8%A7%D9%84%D8%B3%D8%B9%D8%B1%3A%2025000%20%D8%B1%D9%8A%D8%A7%D9%84%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%D9%85%D9%85%D9%8A%D8%B2%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A9%3A%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A*(%D8%A7%D9%84%D8%B5%D9%88%D8%B1)*%3A%0A%20-%20%D9%84%D8%A7%20%D9%85%D8%AD%D8%AF%D9%88%D8%AF%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A*(%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88%D9%87%D8%A7%D8%AA)*%3A%0A%20-%20%D9%81%D9%8A%D8%AF%D9%8A%D9%88%20%D9%85%D9%88%D9%86%D8%AA%D8%A7%D8%AC%20%D9%82%D8%B5%D9%8A%D8%B1%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A*(%D8%A7%D9%84%D9%85%D9%85%D9%8A%D8%B2%D8%A7%D8%AA)*%3A%0A%20-%20%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%20%D8%B5%D9%88%D8%B1%0A%20-%20%D8%A7%D9%84%D8%AA%D8%B3%D9%84%D9%8A%D9%85%20%D8%AF%D8%A7%D8%AE%D9%84%20%D9%81%D9%84%D8%A7%D8%B4%20%D9%85%D9%8A%D9%85%D9%88%D8%B1%D9%8A%0A" class="social-link" title="sms">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    
+                        <a href="https://wa.me/967775393663?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D9%86%D8%A8%D8%B1%D8%A7%D8%B3%20%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B7%D9%84%D8%A8%3A%20(%D8%A7%D9%84%D8%A8%D8%A7%D9%83%D8%AC%20%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A)%0A%D8%A7%D9%84%D8%B3%D8%B9%D8%B1%3A%2025000%20%D8%B1%D9%8A%D8%A7%D9%84%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%D9%85%D9%85%D9%8A%D8%B2%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A9%3A%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A*(%D8%A7%D9%84%D8%B5%D9%88%D8%B1)*%3A%0A%20-%20%D9%84%D8%A7%20%D9%85%D8%AD%D8%AF%D9%88%D8%AF%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A*(%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88%D9%87%D8%A7%D8%AA)*%3A%0A%20-%20%D9%81%D9%8A%D8%AF%D9%8A%D9%88%20%D9%85%D9%88%D9%86%D8%AA%D8%A7%D8%AC%20%D9%82%D8%B5%D9%8A%D8%B1%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A*(%D8%A7%D9%84%D9%85%D9%85%D9%8A%D8%B2%D8%A7%D8%AA)*%3A%0A%20-%20%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%20%D8%B5%D9%88%D8%B1%0A%20-%20%D8%A7%D9%84%D8%AA%D8%B3%D9%84%D9%8A%D9%85%20%D8%AF%D8%A7%D8%AE%D9%84%20%D9%81%D9%84%D8%A7%D8%B4%20%D9%85%D9%8A%D9%85%D9%88%D8%B1%D9%8A%0A" class="social-link" title="whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    
+                        <a href="tel:775393663" class="social-link" title="phone">
+                            <i class="fa fa-phone"></i>
+                        </a>
+                    
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="package-card flex justify-between flex-col overflow-hidden">
+                    <div class="badge bg-gold/70 text-white ">الزفاف</div>
+
+                    
+                    <div class="card-header">
+                    
+                    
+
+                        <i class="fas fa fa-camera logo-watermark"></i>
+                        <h2 class="package-title">الباكج الثالث</h2>
+
+
+                        <div class="package-price">
+                            <span class="price-value  ">٧٠٬٠٠٠</span>
+                            <span class="price-currency ">ريال</span>
+
+                                                        
+
+                        </div>
+
+                    <div class="card-details rounded-lg  ">
+                        <div class="detail-item  ">
+                            <i class="far fa-clock"></i>
+                            <span>مدة خمس ساعات (تحديد الوقت على حسب الطلب)</span>
+                        </div>
+                        <div class="detail-item ">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>اب</span>
+                        </div>
+                    </div>
+
+                    </div>
+
+                    
+
+                    <div class="my-2 flex-1 max-h-[268px] rounded-lg overflow-y-auto">
+
+                        <div class="grid grid-cols-3  my-2 px-1">
+                        
+                        <div class="  bg-primary/10 ">
+                            
+                            <div class="text-[16px] max-h-[40px] h-[40px] min-h-[40px] p-2 overflow-hidden  bg-primary/90 font-bold text-right text-white">التصوير</div>
+                            <div class="text-gray-600 text-[12px]  break-words overflow-wrap-anywhere text-sm ">
+                    <div class="flex flex-col">
+                        
+                            <div class=" p-1 flex gap-2 text-white text-right highlight">
+                               <div>-</div> <div class=" flex-1 break-words overflow-wrap-anywhere">لا محدود</div> 
+                            </div>
+                        
+                    </div>
+                    </div>
+                        
+                        </div>
+      
+                        <div class="  bg-primary/20 ">
+                            
+                            <div class="text-[16px] max-h-[40px] h-[40px] min-h-[40px] p-2 overflow-hidden  bg-primary font-bold text-right text-white">الفيديوهات</div>
+                            <div class="text-gray-600 text-[12px]  break-words overflow-wrap-anywhere text-sm ">
+                    <div class="flex flex-col">
+                        
+                            <div class=" p-1 flex gap-2 text-white text-right highlight">
+                               <div>-</div> <div class=" flex-1 break-words overflow-wrap-anywhere">تصوير فيديو زفة العروسه</div> 
+                            </div>
+                        
+                            <div class=" p-1 flex gap-2 text-white text-right ">
+                               <div>-</div> <div class=" flex-1 break-words overflow-wrap-anywhere">تصوير فيديو زفة العروسين</div> 
+                            </div>
+                        
+                            <div class=" p-1 flex gap-2 text-white text-right highlight">
+                               <div>-</div> <div class=" flex-1 break-words overflow-wrap-anywhere">تقطيع الجاتو</div> 
+                            </div>
+                        
+                    </div>
+                    </div>
+                        
+                        </div>
+      
+                        <div class="  bg-primary/10 ">
+                            
+                            <div class="text-[16px] max-h-[40px] h-[40px] min-h-[40px] p-2 overflow-hidden  bg-primary/90 font-bold text-right text-white">المميزات</div>
+                            <div class="text-gray-600 text-[12px]  break-words overflow-wrap-anywhere text-sm ">
+                    <div class="flex flex-col">
+                        
+                            <div class=" p-1 flex gap-2 text-white text-right highlight">
+                               <div>-</div> <div class=" flex-1 break-words overflow-wrap-anywhere">تعديل الصور</div> 
+                            </div>
+                        
+                            <div class=" p-1 flex gap-2 text-white text-right ">
+                               <div>-</div> <div class=" flex-1 break-words overflow-wrap-anywhere">طباعة 20 صوره مقاس A5</div> 
+                            </div>
+                        
+                            <div class=" p-1 flex gap-2 text-white text-right highlight">
+                               <div>-</div> <div class=" flex-1 break-words overflow-wrap-anywhere">تسليم الصور والفيدوهات داخل فلاش ميموري</div> 
+                            </div>
+                        
+                    </div>
+                    </div>
+                        
+                        </div>
+      
+      </div>
+
+                        <div class="info-section grid  grid-cols-1 gap-2 mx-2">
+                           
+                        
+                        
+                            
+                           
+                        </div>     
+                    </div>
+
+                    <div class="card-footer flex flex-col gap-3">
+                        <button onclick="orderPackage(undefined)" class="w-full bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 rounded-lg flex items-center justify-center gap-2 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                            <i class="fas fa-shopping-cart"></i>
+                            طلب الباقة
+                        </button>
+                        <div class="footer-content hidden justify-between w-full">
+                            <span class="footer-text text-xs">لطلب الباقه عبر </span>
+                            <div class="social-links">
+                                
+                        <a href="sms:967775393663?body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D9%86%D8%A8%D8%B1%D8%A7%D8%B3%20%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B7%D9%84%D8%A8%3A%20(%D8%A7%D9%84%D8%A8%D8%A7%D9%83%D8%AC%20%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB)%0A%D8%A7%D9%84%D8%B3%D8%B9%D8%B1%3A%2070000%20%D8%B1%D9%8A%D8%A7%D9%84%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%D9%85%D9%85%D9%8A%D8%B2%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A9%3A%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A*(%D8%A7%D9%84%D8%AA%D8%B5%D9%88%D9%8A%D8%B1)*%3A%0A%20-%20%D9%84%D8%A7%20%D9%85%D8%AD%D8%AF%D9%88%D8%AF%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A*(%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88%D9%87%D8%A7%D8%AA)*%3A%0A%20-%20%D8%AA%D8%B5%D9%88%D9%8A%D8%B1%20%D9%81%D9%8A%D8%AF%D9%8A%D9%88%20%D8%B2%D9%81%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D9%88%D8%B3%D9%87%0A%20-%20%D8%AA%D8%B5%D9%88%D9%8A%D8%B1%20%D9%81%D9%8A%D8%AF%D9%8A%D9%88%20%D8%B2%D9%81%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D9%88%D8%B3%D9%8A%D9%86%0A%20-%20%D8%AA%D9%82%D8%B7%D9%8A%D8%B9%20%D8%A7%D9%84%D8%AC%D8%A7%D8%AA%D9%88%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A*(%D8%A7%D9%84%D9%85%D9%85%D9%8A%D8%B2%D8%A7%D8%AA)*%3A%0A%20-%20%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%20%D8%A7%D9%84%D8%B5%D9%88%D8%B1%0A%20-%20%D8%B7%D8%A8%D8%A7%D8%B9%D8%A9%2020%20%D8%B5%D9%88%D8%B1%D9%87%20%D9%85%D9%82%D8%A7%D8%B3%20A5%0A%20-%20%D8%AA%D8%B3%D9%84%D9%8A%D9%85%20%D8%A7%D9%84%D8%B5%D9%88%D8%B1%20%D9%88%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%88%D9%87%D8%A7%D8%AA%20%D8%AF%D8%A7%D8%AE%D9%84%20%D9%81%D9%84%D8%A7%D8%B4%20%D9%85%D9%8A%D9%85%D9%88%D8%B1%D9%8A%0A" class="social-link" title="sms">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    
+                        <a href="https://wa.me/967775393663?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D9%86%D8%A8%D8%B1%D8%A7%D8%B3%20%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B7%D9%84%D8%A8%3A%20(%D8%A7%D9%84%D8%A8%D8%A7%D9%83%D8%AC%20%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB)%0A%D8%A7%D9%84%D8%B3%D8%B9%D8%B1%3A%2070000%20%D8%B1%D9%8A%D8%A7%D9%84%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%D9%85%D9%85%D9%8A%D8%B2%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A9%3A%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A*(%D8%A7%D9%84%D8%AA%D8%B5%D9%88%D9%8A%D8%B1)*%3A%0A%20-%20%D9%84%D8%A7%20%D9%85%D8%AD%D8%AF%D9%88%D8%AF%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A*(%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88%D9%87%D8%A7%D8%AA)*%3A%0A%20-%20%D8%AA%D8%B5%D9%88%D9%8A%D8%B1%20%D9%81%D9%8A%D8%AF%D9%8A%D9%88%20%D8%B2%D9%81%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D9%88%D8%B3%D9%87%0A%20-%20%D8%AA%D8%B5%D9%88%D9%8A%D8%B1%20%D9%81%D9%8A%D8%AF%D9%8A%D9%88%20%D8%B2%D9%81%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D9%88%D8%B3%D9%8A%D9%86%0A%20-%20%D8%AA%D9%82%D8%B7%D9%8A%D8%B9%20%D8%A7%D9%84%D8%AC%D8%A7%D8%AA%D9%88%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A*(%D8%A7%D9%84%D9%85%D9%85%D9%8A%D8%B2%D8%A7%D8%AA)*%3A%0A%20-%20%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%20%D8%A7%D9%84%D8%B5%D9%88%D8%B1%0A%20-%20%D8%B7%D8%A8%D8%A7%D8%B9%D8%A9%2020%20%D8%B5%D9%88%D8%B1%D9%87%20%D9%85%D9%82%D8%A7%D8%B3%20A5%0A%20-%20%D8%AA%D8%B3%D9%84%D9%8A%D9%85%20%D8%A7%D9%84%D8%B5%D9%88%D8%B1%20%D9%88%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%88%D9%87%D8%A7%D8%AA%20%D8%AF%D8%A7%D8%AE%D9%84%20%D9%81%D9%84%D8%A7%D8%B4%20%D9%85%D9%8A%D9%85%D9%88%D8%B1%D9%8A%0A" class="social-link" title="whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    
+                        <a href="tel:775393663" class="social-link" title="phone">
+                            <i class="fa fa-phone"></i>
+                        </a>
+                    
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="package-card flex justify-between flex-col overflow-hidden">
+                    <div class="badge bg-red-500 text-white ">التخرج واعياد الميلاد</div>
+
+                    
+                    <div class="card-header">
+                    
+                    
+
+                        <i class="fas null logo-watermark"></i>
+                        <h2 class="package-title">الباكج الثالث</h2>
+
+
+                        <div class="package-price">
+                            <span class="price-value  ">٣٠٬٠٠٠</span>
+                            <span class="price-currency ">ريال</span>
+
+                                                        
+
+                        </div>
+
+                    <div class="card-details rounded-lg  ">
+                        <div class="detail-item  ">
+                            <i class="far fa-clock"></i>
+                            <span>ساعتين</span>
+                        </div>
+                        <div class="detail-item ">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>اب</span>
+                        </div>
+                    </div>
+
+                    </div>
+
+                    
+
+                    <div class="my-2 flex-1 max-h-[268px] rounded-lg overflow-y-auto">
+
+                        <div class="grid grid-cols-3  my-2 px-1">
+                        
+                        <div class="  bg-primary/10 ">
+                            
+                            <div class="text-[16px] max-h-[40px] h-[40px] min-h-[40px] p-2 overflow-hidden  bg-primary/90 font-bold text-right text-white">الصور</div>
+                            <div class="text-gray-600 text-[12px]  break-words overflow-wrap-anywhere text-sm ">
+                    <div class="flex flex-col">
+                        
+                            <div class=" p-1 flex gap-2 text-white text-right highlight">
+                               <div>-</div> <div class=" flex-1 break-words overflow-wrap-anywhere">تصوير لا محدود</div> 
+                            </div>
+                        
+                    </div>
+                    </div>
+                        
+                        </div>
+      
+                        <div class="  bg-primary/20 ">
+                            
+                            <div class="text-[16px] max-h-[40px] h-[40px] min-h-[40px] p-2 overflow-hidden  bg-primary font-bold text-right text-white">الفيديوهات</div>
+                            <div class="text-gray-600 text-[12px]  break-words overflow-wrap-anywhere text-sm ">
+                    <div class="flex flex-col">
+                        
+                            <div class=" p-1 flex gap-2 text-white text-right highlight">
+                               <div>-</div> <div class=" flex-1 break-words overflow-wrap-anywhere">فيديو مونتاج قصير</div> 
+                            </div>
+                        
+                    </div>
+                    </div>
+                        
+                        </div>
+      
+                        <div class="  bg-primary/10 ">
+                            
+                            <div class="text-[16px] max-h-[40px] h-[40px] min-h-[40px] p-2 overflow-hidden  bg-primary/90 font-bold text-right text-white">المميزات</div>
+                            <div class="text-gray-600 text-[12px]  break-words overflow-wrap-anywhere text-sm ">
+                    <div class="flex flex-col">
+                        
+                            <div class=" p-1 flex gap-2 text-white text-right highlight">
+                               <div>-</div> <div class=" flex-1 break-words overflow-wrap-anywhere">تعديل صور</div> 
+                            </div>
+                        
+                            <div class=" p-1 flex gap-2 text-white text-right ">
+                               <div>-</div> <div class=" flex-1 break-words overflow-wrap-anywhere">طباعة 15 صوره مقاس A5</div> 
+                            </div>
+                        
+                            <div class=" p-1 flex gap-2 text-white text-right highlight">
+                               <div>-</div> <div class=" flex-1 break-words overflow-wrap-anywhere">تسليم الصور داخل فلاش ميموري</div> 
+                            </div>
+                        
+                    </div>
+                    </div>
+                        
+                        </div>
+      
+      </div>
+
+                        <div class="info-section grid  grid-cols-1 gap-2 mx-2">
+                           
+                        
+                        
+                            
+                           
+                        </div>     
+                    </div>
+
+                    <div class="card-footer flex flex-col gap-3">
+                        <button onclick="orderPackage(undefined)" class="w-full bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 rounded-lg flex items-center justify-center gap-2 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                            <i class="fas fa-shopping-cart"></i>
+                            طلب الباقة
+                        </button>
+                        <div class="footer-content hidden justify-between w-full">
+                            <span class="footer-text text-xs">لطلب الباقه عبر </span>
+                            <div class="social-links">
+                                
+                        <a href="sms:967775393663?body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D9%86%D8%A8%D8%B1%D8%A7%D8%B3%20%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B7%D9%84%D8%A8%3A%20(%D8%A7%D9%84%D8%A8%D8%A7%D9%83%D8%AC%20%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB)%0A%D8%A7%D9%84%D8%B3%D8%B9%D8%B1%3A%2030000%20%D8%B1%D9%8A%D8%A7%D9%84%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%D9%85%D9%85%D9%8A%D8%B2%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A9%3A%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A*(%D8%A7%D9%84%D8%B5%D9%88%D8%B1)*%3A%0A%20-%20%D8%AA%D8%B5%D9%88%D9%8A%D8%B1%20%D9%84%D8%A7%20%D9%85%D8%AD%D8%AF%D9%88%D8%AF%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A*(%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88%D9%87%D8%A7%D8%AA)*%3A%0A%20-%20%D9%81%D9%8A%D8%AF%D9%8A%D9%88%20%D9%85%D9%88%D9%86%D8%AA%D8%A7%D8%AC%20%D9%82%D8%B5%D9%8A%D8%B1%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A*(%D8%A7%D9%84%D9%85%D9%85%D9%8A%D8%B2%D8%A7%D8%AA)*%3A%0A%20-%20%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%20%D8%B5%D9%88%D8%B1%0A%20-%20%D8%B7%D8%A8%D8%A7%D8%B9%D8%A9%2015%20%D8%B5%D9%88%D8%B1%D9%87%20%D9%85%D9%82%D8%A7%D8%B3%20A5%0A%20-%20%D8%AA%D8%B3%D9%84%D9%8A%D9%85%20%D8%A7%D9%84%D8%B5%D9%88%D8%B1%20%D8%AF%D8%A7%D8%AE%D9%84%20%D9%81%D9%84%D8%A7%D8%B4%20%D9%85%D9%8A%D9%85%D9%88%D8%B1%D9%8A%0A" class="social-link" title="sms">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    
+                        <a href="https://wa.me/967775393663?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D9%86%D8%A8%D8%B1%D8%A7%D8%B3%20%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B7%D9%84%D8%A8%3A%20(%D8%A7%D9%84%D8%A8%D8%A7%D9%83%D8%AC%20%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB)%0A%D8%A7%D9%84%D8%B3%D8%B9%D8%B1%3A%2030000%20%D8%B1%D9%8A%D8%A7%D9%84%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%D9%85%D9%85%D9%8A%D8%B2%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A9%3A%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A*(%D8%A7%D9%84%D8%B5%D9%88%D8%B1)*%3A%0A%20-%20%D8%AA%D8%B5%D9%88%D9%8A%D8%B1%20%D9%84%D8%A7%20%D9%85%D8%AD%D8%AF%D9%88%D8%AF%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A*(%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88%D9%87%D8%A7%D8%AA)*%3A%0A%20-%20%D9%81%D9%8A%D8%AF%D9%8A%D9%88%20%D9%85%D9%88%D9%86%D8%AA%D8%A7%D8%AC%20%D9%82%D8%B5%D9%8A%D8%B1%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A*(%D8%A7%D9%84%D9%85%D9%85%D9%8A%D8%B2%D8%A7%D8%AA)*%3A%0A%20-%20%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%20%D8%B5%D9%88%D8%B1%0A%20-%20%D8%B7%D8%A8%D8%A7%D8%B9%D8%A9%2015%20%D8%B5%D9%88%D8%B1%D9%87%20%D9%85%D9%82%D8%A7%D8%B3%20A5%0A%20-%20%D8%AA%D8%B3%D9%84%D9%8A%D9%85%20%D8%A7%D9%84%D8%B5%D9%88%D8%B1%20%D8%AF%D8%A7%D8%AE%D9%84%20%D9%81%D9%84%D8%A7%D8%B4%20%D9%85%D9%8A%D9%85%D9%88%D8%B1%D9%8A%0A" class="social-link" title="whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    
+                        <a href="tel:775393663" class="social-link" title="phone">
+                            <i class="fa fa-phone"></i>
+                        </a>
+                    
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="package-card flex justify-between flex-col overflow-hidden">
+                    <div class="badge bg-gold/70 text-white ">الزفاف</div>
+
+                    
+                    <div class="card-header">
+                    
+                    
+
+                        <i class="fas null logo-watermark"></i>
+                        <h2 class="package-title">الباكج الرابع</h2>
+
+
+                        <div class="package-price">
+                            <span class="price-value  ">١٢٠٬٠٠٠</span>
+                            <span class="price-currency ">ريال</span>
+
+                                                        
+
+                        </div>
+
+                    <div class="card-details rounded-lg  ">
+                        <div class="detail-item  ">
+                            <i class="far fa-clock"></i>
+                            <span>من الساعة 1 الى 8</span>
+                        </div>
+                        <div class="detail-item ">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>اب</span>
+                        </div>
+                    </div>
+
+                    </div>
+
+                    
+
+                    <div class="my-2 flex-1 max-h-[268px] rounded-lg overflow-y-auto">
+
+                        <div class="grid grid-cols-3  my-2 px-1">
+                        
+                        <div class="  bg-primary/10 ">
+                            
+                            <div class="text-[16px] max-h-[40px] h-[40px] min-h-[40px] p-2 overflow-hidden  bg-primary/90 font-bold text-right text-white">التصوير</div>
+                            <div class="text-gray-600 text-[12px]  break-words overflow-wrap-anywhere text-sm ">
+                    <div class="flex flex-col">
+                        
+                            <div class=" p-1 flex gap-2 text-white text-right highlight">
+                               <div>-</div> <div class=" flex-1 break-words overflow-wrap-anywhere">لا محدود للعرس كامل</div> 
+                            </div>
+                        
+                    </div>
+                    </div>
+                        
+                        </div>
+      
+                        <div class="  bg-primary/20 ">
+                            
+                            <div class="text-[16px] max-h-[40px] h-[40px] min-h-[40px] p-2 overflow-hidden  bg-primary font-bold text-right text-white">الفيديو</div>
+                            <div class="text-gray-600 text-[12px]  break-words overflow-wrap-anywhere text-sm ">
+                    <div class="flex flex-col">
+                        
+                            <div class=" p-1 flex gap-2 text-white text-right highlight">
+                               <div>-</div> <div class=" flex-1 break-words overflow-wrap-anywhere">تصوير فيديو زفة العروسة</div> 
+                            </div>
+                        
+                            <div class=" p-1 flex gap-2 text-white text-right ">
+                               <div>-</div> <div class=" flex-1 break-words overflow-wrap-anywhere">زفة العريسين</div> 
+                            </div>
+                        
+                            <div class=" p-1 flex gap-2 text-white text-right highlight">
+                               <div>-</div> <div class=" flex-1 break-words overflow-wrap-anywhere">دخول الاهل</div> 
+                            </div>
+                        
+                            <div class=" p-1 flex gap-2 text-white text-right ">
+                               <div>-</div> <div class=" flex-1 break-words overflow-wrap-anywhere">تقطيع الجاتو</div> 
+                            </div>
+                        
+                    </div>
+                    </div>
+                        
+                        </div>
+      
+                        <div class="  bg-primary/10 ">
+                            
+                            <div class="text-[16px] max-h-[40px] h-[40px] min-h-[40px] p-2 overflow-hidden  bg-primary/90 font-bold text-right text-white">المميزات</div>
+                            <div class="text-gray-600 text-[12px]  break-words overflow-wrap-anywhere text-sm ">
+                    <div class="flex flex-col">
+                        
+                            <div class=" p-1 flex gap-2 text-white text-right highlight">
+                               <div>-</div> <div class=" flex-1 break-words overflow-wrap-anywhere">تصوير فيديو برونين (مانع الاهتزاز)</div> 
+                            </div>
+                        
+                            <div class=" p-1 flex gap-2 text-white text-right ">
+                               <div>-</div> <div class=" flex-1 break-words overflow-wrap-anywhere">كليب ممنتج لتفاصيل العرس والعريسين</div> 
+                            </div>
+                        
+                            <div class=" p-1 flex gap-2 text-white text-right highlight">
+                               <div>-</div> <div class=" flex-1 break-words overflow-wrap-anywhere">تعديل صور</div> 
+                            </div>
+                        
+                            <div class=" p-1 flex gap-2 text-white text-right ">
+                               <div>-</div> <div class=" flex-1 break-words overflow-wrap-anywhere">طباعة 30 صوره مقاس A5</div> 
+                            </div>
+                        
+                            <div class=" p-1 flex gap-2 text-white text-right highlight">
+                               <div>-</div> <div class=" flex-1 break-words overflow-wrap-anywhere">تسليم الصور والفيدوهات داخل فلاش ميموري</div> 
+                            </div>
+                        
+                    </div>
+                    </div>
+                        
+                        </div>
+      
+      </div>
+
+                        <div class="info-section grid  grid-cols-1 gap-2 mx-2">
+                           
+                        
+                        
+                            
+                           
+                        </div>     
+                    </div>
+
+                    <div class="card-footer flex flex-col gap-3">
+                        <button onclick="orderPackage(undefined)" class="w-full bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 rounded-lg flex items-center justify-center gap-2 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                            <i class="fas fa-shopping-cart"></i>
+                            طلب الباقة
+                        </button>
+                        <div class="footer-content hidden justify-between w-full">
+                            <span class="footer-text text-xs">لطلب الباقه عبر </span>
+                            <div class="social-links">
+                                
+                        <a href="sms:967775393663?body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D9%86%D8%A8%D8%B1%D8%A7%D8%B3%20%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B7%D9%84%D8%A8%3A%20(%D8%A7%D9%84%D8%A8%D8%A7%D9%83%D8%AC%20%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9)%0A%D8%A7%D9%84%D8%B3%D8%B9%D8%B1%3A%20120000%20%D8%B1%D9%8A%D8%A7%D9%84%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%D9%85%D9%85%D9%8A%D8%B2%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A9%3A%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A*(%D8%A7%D9%84%D8%AA%D8%B5%D9%88%D9%8A%D8%B1)*%3A%0A%20-%20%D9%84%D8%A7%20%D9%85%D8%AD%D8%AF%D9%88%D8%AF%20%D9%84%D9%84%D8%B9%D8%B1%D8%B3%20%D9%83%D8%A7%D9%85%D9%84%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A*(%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88)*%3A%0A%20-%20%D8%AA%D8%B5%D9%88%D9%8A%D8%B1%20%D9%81%D9%8A%D8%AF%D9%8A%D9%88%20%D8%B2%D9%81%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D9%88%D8%B3%D8%A9%0A%20-%20%D8%B2%D9%81%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D9%8A%D8%B3%D9%8A%D9%86%0A%20-%20%D8%AF%D8%AE%D9%88%D9%84%20%D8%A7%D9%84%D8%A7%D9%87%D9%84%0A%20-%20%D8%AA%D9%82%D8%B7%D9%8A%D8%B9%20%D8%A7%D9%84%D8%AC%D8%A7%D8%AA%D9%88%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A*(%D8%A7%D9%84%D9%85%D9%85%D9%8A%D8%B2%D8%A7%D8%AA)*%3A%0A%20-%20%D8%AA%D8%B5%D9%88%D9%8A%D8%B1%20%D9%81%D9%8A%D8%AF%D9%8A%D9%88%20%D8%A8%D8%B1%D9%88%D9%86%D9%8A%D9%86%20(%D9%85%D8%A7%D9%86%D8%B9%20%D8%A7%D9%84%D8%A7%D9%87%D8%AA%D8%B2%D8%A7%D8%B2)%0A%20-%20%D9%83%D9%84%D9%8A%D8%A8%20%D9%85%D9%85%D9%86%D8%AA%D8%AC%20%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%20%D8%A7%D9%84%D8%B9%D8%B1%D8%B3%20%D9%88%D8%A7%D9%84%D8%B9%D8%B1%D9%8A%D8%B3%D9%8A%D9%86%0A%20-%20%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%20%D8%B5%D9%88%D8%B1%0A%20-%20%D8%B7%D8%A8%D8%A7%D8%B9%D8%A9%2030%20%D8%B5%D9%88%D8%B1%D9%87%20%D9%85%D9%82%D8%A7%D8%B3%20A5%0A%20-%20%D8%AA%D8%B3%D9%84%D9%8A%D9%85%20%D8%A7%D9%84%D8%B5%D9%88%D8%B1%20%D9%88%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%88%D9%87%D8%A7%D8%AA%20%D8%AF%D8%A7%D8%AE%D9%84%20%D9%81%D9%84%D8%A7%D8%B4%20%D9%85%D9%8A%D9%85%D9%88%D8%B1%D9%8A%0A" class="social-link" title="sms">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    
+                        <a href="https://wa.me/967775393663?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D9%86%D8%A8%D8%B1%D8%A7%D8%B3%20%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B7%D9%84%D8%A8%3A%20(%D8%A7%D9%84%D8%A8%D8%A7%D9%83%D8%AC%20%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9)%0A%D8%A7%D9%84%D8%B3%D8%B9%D8%B1%3A%20120000%20%D8%B1%D9%8A%D8%A7%D9%84%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%D9%85%D9%85%D9%8A%D8%B2%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A9%3A%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A*(%D8%A7%D9%84%D8%AA%D8%B5%D9%88%D9%8A%D8%B1)*%3A%0A%20-%20%D9%84%D8%A7%20%D9%85%D8%AD%D8%AF%D9%88%D8%AF%20%D9%84%D9%84%D8%B9%D8%B1%D8%B3%20%D9%83%D8%A7%D9%85%D9%84%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A*(%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88)*%3A%0A%20-%20%D8%AA%D8%B5%D9%88%D9%8A%D8%B1%20%D9%81%D9%8A%D8%AF%D9%8A%D9%88%20%D8%B2%D9%81%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D9%88%D8%B3%D8%A9%0A%20-%20%D8%B2%D9%81%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D9%8A%D8%B3%D9%8A%D9%86%0A%20-%20%D8%AF%D8%AE%D9%88%D9%84%20%D8%A7%D9%84%D8%A7%D9%87%D9%84%0A%20-%20%D8%AA%D9%82%D8%B7%D9%8A%D8%B9%20%D8%A7%D9%84%D8%AC%D8%A7%D8%AA%D9%88%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A*(%D8%A7%D9%84%D9%85%D9%85%D9%8A%D8%B2%D8%A7%D8%AA)*%3A%0A%20-%20%D8%AA%D8%B5%D9%88%D9%8A%D8%B1%20%D9%81%D9%8A%D8%AF%D9%8A%D9%88%20%D8%A8%D8%B1%D9%88%D9%86%D9%8A%D9%86%20(%D9%85%D8%A7%D9%86%D8%B9%20%D8%A7%D9%84%D8%A7%D9%87%D8%AA%D8%B2%D8%A7%D8%B2)%0A%20-%20%D9%83%D9%84%D9%8A%D8%A8%20%D9%85%D9%85%D9%86%D8%AA%D8%AC%20%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%20%D8%A7%D9%84%D8%B9%D8%B1%D8%B3%20%D9%88%D8%A7%D9%84%D8%B9%D8%B1%D9%8A%D8%B3%D9%8A%D9%86%0A%20-%20%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%20%D8%B5%D9%88%D8%B1%0A%20-%20%D8%B7%D8%A8%D8%A7%D8%B9%D8%A9%2030%20%D8%B5%D9%88%D8%B1%D9%87%20%D9%85%D9%82%D8%A7%D8%B3%20A5%0A%20-%20%D8%AA%D8%B3%D9%84%D9%8A%D9%85%20%D8%A7%D9%84%D8%B5%D9%88%D8%B1%20%D9%88%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%88%D9%87%D8%A7%D8%AA%20%D8%AF%D8%A7%D8%AE%D9%84%20%D9%81%D9%84%D8%A7%D8%B4%20%D9%85%D9%8A%D9%85%D9%88%D8%B1%D9%8A%0A" class="social-link" title="whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    
+                        <a href="tel:775393663" class="social-link" title="phone">
+                            <i class="fa fa-phone"></i>
+                        </a>
+                    
+                            </div>
+                        </div>
+                    </div>
+                </div></div>
+        </div>
+    </section>
+
+   
+    <div class="bg-purple-500 hidden text-purple-400"></div>
+
+    <!-- Order Modal -->
+    <div id="order-modal" class="fixed py-4 inset-0 z-[100]">
+        <!-- Backdrop -->
+        <div class="absolute inset-0 bg-black/80 backdrop-blur-sm" onclick="closeOrderModal()"></div>
+        
+        <!-- Modal Content -->
+        <div class="absolute max-h-[80vh] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-md bg-zinc-900 border border-white/10 rounded-2xl shadow-2xl overflow-y-auto scale-100 opacity-100">
+            <!-- Header -->
+            <div class="bg-zinc-800 z-50 p-4 sticky top-0 flex items-center justify-between border-b border-white/5">
+                <h3 class="text-xl font-bold text-white">طلب باقة</h3>
+                <button onclick="closeOrderModal()" class="text-white/50 hover:text-white transition-colors">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+
+            <!-- Body -->
+            <div class="p-6 space-y-6  overflow-y-auto">
+
+
+
+                <!-- Package Info -->
+                <div class="bg-primary/10 rounded-xl p-4 border border-primary/20">
+                    <h4 id="modal-package-name" class="font-bold text-lg text-primary-light mb-1">الباكج الاول</h4>
+                    <h4 id="modal-package-type" class="font-bold text-sm text-primary-light mb-1">الزفاف</h4>
+
+                    <p id="modal-package-price" class="text-white/80 font-mono">٣٠٬٠٠٠ ريال</p>
+
+<div> 
+<div class="text-primary-light text-[14px] text-align-center font-bold my-1">شروط الحجز الحجز:</div>
+<ul classe="mb-4"> 
+<li class="text-[12px]"><span class="text-red-500 text-[14px]">*</span> رسالة تحتوي على تاريخ المناسبة مع موقع المناسبة</li>
+<li class="text-[12px]">
+<span class="text-red-500 text-[14px]">*</span> تسليم عربون نص المبلغ عبر احد الحسابات ادناه</li>
+<li class="text-[12px]"><span class="text-red-500">*</span> تأكد من نسخ رقم الحساب  قبل ارسال الطلب</li>
+
+ </ul> 
+</div>
+                </div>
+
+                <!-- Payment Method Switch -->
+                <div class="space-y-3">
+                    <label class="block text-sm font-medium text-white/70">طريقة الدفع</label>
+                    <div class="flex bg-black/40 rounded-lg p-1 border border-white/5">
+                        <button onclick="setPaymentMethod('kurimi')" id="btn-kurimi" class="flex-1 py-2 px-4 rounded-md text-sm font-medium transition-all duration-300 flex items-center justify-center gap-2 text-white/50 hover:bg-white/5">
+                            <i class="fas fa-university"></i>
+                            كريمي
+                        </button>
+                        <button onclick="setPaymentMethod('jeeb')" id="btn-jeeb" class="flex-1 py-2 px-4 rounded-md text-sm font-medium transition-all duration-300 flex items-center justify-center gap-2 bg-red-600 text-white shadow-lg">
+                            <i class="fas fa-wallet"></i>
+                            جيب
+                        </button>
+                    </div>
+
+                    <div id="accountmethod" ac-name="جيب" ac-number="165922">
 <div class="relative mt-1 w-full max-w-md bg-white border-4 border-red-700 rounded-2xl overflow-hidden shadow-2xl flex flex-row-reverse pl-2 pr-1 font-['Tajawal']" dir="rtl">
     
-    <div class="w-1/3 flex flex-col items-center justify-center border-l-2 border-gray-100 pl-2">
+    <div class="w-1/3 flex flex-col items-center justify-center border-l-2 border-gray-100 pl-1">
       <div class="bg-white p-1 border-2 border-red-200 rounded-lg">
         <img src="assets/logo/jaib.png" alt="QR Code" class="w-20 h-20">
       </div>
@@ -69,10 +1127,10 @@
         <h2 class="text-red-800 my-1 text-lg font-bold mb-1">حساب جيب</h2>
       </div>
 
-      <div class="my-2 bg-red-50 rounded-lg py-1 px-3">
+      <div class="my-2 bg-red-50 rounded-lg py-1 px-1">
         <div class="flex justify-between items-center">
             <button onclick="copy('165922')"><span class="fa text-red-400 fa-copy"></span></button>
-             <span class="text-red-700 font-black text-xl tracking-[0.2em]">165922</span>
+             <span class="text-red-700 font-black text-[16px] md:text-xl tracking-[0.2em]">165922</span>
         </div>
   
       </div>
@@ -90,7 +1148,314 @@
   </div>
 
                 
-                </li>
+                </div>
+                </div>
+
+                <!-- Inputs -->
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-white/70 mb-2">موقع المناسبة</label>
+                        <div class="relative">
+                            <i class="fas fa-map-marker-alt absolute right-3 top-1/2 -translate-y-1/2 text-white/30"></i>
+                            <input type="text" id="order-location" class="w-full bg-black/40 border border-white/10 rounded-xl py-3 pr-10 pl-4 text-white placeholder-white/20 focus:outline-none focus:border-primary/50 transition-colors" placeholder="مثال: قاعة المراسيم">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-white/70 mb-2">تاريخ المناسبة</label>
+                        <div class="relative">
+                            <input type="date" id="order-date" class="w-full bg-black/40 border border-white/10 rounded-xl py-3 px-4 text-white focus:outline-none focus:border-primary/50 transition-colors scheme-dark">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-white/70 mb-2">ملاحظات إضافية</label>
+                        <textarea id="order-notes" rows="3" class="w-full bg-black/40 border border-white/10 rounded-xl py-3 px-4 text-white placeholder-white/20 focus:outline-none focus:border-primary/50 transition-colors resize-none" placeholder="أي تفاصيل أخرى تود إضافتها..."></textarea>
+                    </div>
+
+                    <div>
+ <p class="text-primary-light font-bold my-1">ملاحظات:</p>
+ <ul>
+    
+<div class="flex flex-col gap-1 border-primary my-2 p-1 rounded-lg border-[1px]">
+        <li class="text-[12px]"> سعر الساعة الإضافية ب 10 الف ريال</li>
+<div class="text-[12px] flex gap-2 ">
+<label for="clock_plus">اضافه ساعات اضافيه</label>
+<input type="checkbox" name="clock_plus" onchange="changeColck(this)" id="clock_plus">
+</div>
+
+<script>
+    function changeColck(e){
+        if(e.checked){
+            document.getElementById('clock_number_div').classList.remove('hidden')
+            document.getElementById('clock_number').setAttribute("required","true")
+
+        }else{
+            
+            document.getElementById('clock_number_div').classList.add('hidden')
+            document.getElementById('clock_number').removeAttribute("required")
+        }
+    }
+</script>
+
+<div id="clock_number_div" class="text-[12px] flex gap-2 hidden">
+<label for="clock_number">عدد الساعات</label>
+<input type="number" class="w-1/2 bg-black/40 border border-white/10 rounded-lg py-1 px-4 text-white placeholder-white/20 focus:outline-none focus:border-primary/50 transition-colors" max="24" min="1" name="clock_number" id="clock_number">
+</div>
+
+    </div>
+
+<li class="text-[12px]">فترة تسليم الصور من شهر  الى شهرين </li>
+<li class="text-[12px]">تسليم الصور المستعجله خلال 10 ايام زيادة 10 الف.</li>
+<li class="text-[12px]">تصوير منفرد لغير الصور الجماعية زيادة 1000 ريال.</li>
+<li class="text-[12px]">يتم الاحتفاظ بنسخة من الصور لمدة ستة اشهر من تاريخ المناسبة.</li>
+</ul>
+</div>
+
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="p-4 bg-zinc-800/50 flex flex-col gap-2 p-2 my-2 border-t border-white/5">
+                <button onclick="submitOrder('whats')" class="w-full bg-green-600 hover:bg-green-500 text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2 transition-all transform active:scale-95 shadow-lg shadow-green-900/20">
+                    <i class="fab fa-whatsapp text-xl"></i>
+                    إرسال الطلب عبر واتساب
+                </button>
+
+                <button onclick="submitOrder('sms')" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2 transition-all transform active:scale-95 shadow-lg shadow-green-900/20">
+                    <i class="fab fa-envelope text-xl"></i>
+                    إرسال الطلب عبر sms
+                </button>
+
+                 <button onclick="closeOrderModal()" class="w-full bg-primary hover:bg-primary/50 text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2 transition-all transform active:scale-95 shadow-lg shadow-green-900/20">
+                    <i class="fab fa-close text-xl"></i>
+الغاء
+                </button>
+            </div>
+        </div>
+    </div>
+
+   
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="py-8 bg-black/80 border-t border-white/10">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                  <p class="text-white/50 text-sm">
+                    © <script>
+                        const year = new Date(Date.now()).getFullYear();
+                        document.write(year)
+                        </script>2026
+                         <span id="footer-name"></span>. جميع الحقوق محفوظة.
+                </p>
+                <div class="flex gap-4" id="footer-social">
+                    <!-- Social links will be injected here -->
+                </div>
+                <p onclick="window.open('tel:+967772024038','_blank')" class="text-sm cursor-pointer text-primary">م / ابراهيم الجداوي</p>
+            </div>
+        </div>
+    </footer>
+
+ 
+    <!-- ==================== JAVASCRIPT ==================== -->
+    <script>
+        const Packages=(async function (params) {
+            return await fetchData("packages")
+        } ())
+        // ========== UTILITY FUNCTIONS ==========
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            return date.toLocaleDateString('ar-SA', { year: 'numeric', month: 'long', day: 'numeric' });
+        }
+
+        function calculateDiscountedPrice(price, discountPercent) {
+            return price - (price * discountPercent / 100);
+        }
+
+        function generateWhatsAppURL(phone, message) {
+            const cleanPhone = phone.replace(/[^0-9]/g, '');
+            const encodedMessage = encodeURIComponent(message);
+            return `https://wa.me/${cleanPhone}?text=${encodedMessage}`;
+        }
+
+        function copy(text){navigator.clipboard.writeText(text);alert('تم النسخ')}
+
+        function generateSmsURL(phone, message) {
+            const cleanPhone = phone.replace(/[^0-9]/g, '');
+            const encodedMessage = encodeURIComponent(message);
+            return `sms:${cleanPhone}?body=${encodedMessage}`;
+        }
+
+        function genline(length, char = "=") {
+             if (typeof length === 'string') {
+                length = length.length;
+             }
+             return char.repeat(length);
+        }
+
+        // ========== DARK MODE ==========
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (event.matches) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        });
+
+        // ========== HEADER SCROLL EFFECT ==========
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('header-scrolled','border-b-2','rounded-lg','border-b-primary');
+            } else {
+                header.classList.remove('header-scrolled','border-b-2','rounded-lg','border-b-primary');
+            }
+        });
+
+        // ========== MOBILE MENU ==========
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const closeMobileMenu = document.getElementById('close-mobile-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileOverlay = document.getElementById('mobile-overlay');
+
+        function openMobileMenu() {
+            mobileMenu.classList.add('active');
+            mobileOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+
+
+        function closeMobileMenuFunc() {
+            mobileMenu.classList.remove('active');
+            mobileOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        mobileMenuBtn.addEventListener('click', openMobileMenu);
+        closeMobileMenu.addEventListener('click', closeMobileMenuFunc);
+        mobileOverlay.addEventListener('click', closeMobileMenuFunc);
+
+        // Close menu on link click
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', closeMobileMenuFunc);
+        });
+
+        // ========== SMOOTH SCROLL ==========
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+
+
+          function runderacount(account){
+              const container=document.getElementById("accountmethod")
+              account=account[0]
+              console.log(account)
+            
+
+                let isKurimi=account.wallet_name.includes("كريمي")
+                console.log(isKurimi)
+                let account_properties={
+                    intent_link:isKurimi?"android-app://com.KuraimiBank":"android-app://com.ahd.jaib",
+                    fallbackBrowser:`S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3D${isKurimi?"com.KuraimiBank;":"com.ahd.jaib;"}`,
+                    color:isKurimi?"purple":"red",
+                    logo:isKurimi?"kur.png":"jaib.png",
+                  
+                }
+
+                let color=account_properties.color
+                let logo=account_properties.logo
+
+
+                let element= `
+<div class="relative mt-1 w-full max-w-md bg-white border-4 border-${color}-700 rounded-2xl overflow-hidden shadow-2xl flex flex-row-reverse pl-2 pr-1 font-['Tajawal']" dir="rtl">
+    
+    <div class="w-1/3 flex flex-col items-center justify-center border-l-2 border-gray-100 pl-1">
+      <div class="bg-white p-1 border-2 border-${color}-200 rounded-lg">
+        <img src="assets/logo/${logo}" alt="QR Code" class="w-20 h-20">
+      </div>
+    </div>
+
+    <div class="w-2/3 pr-1 flex flex-col justify-between text-right">
+      <div>
+        <h2 class="text-${color}-800 my-1 text-lg font-bold mb-1">حساب ${account.wallet_name}</h2>
+      </div>
+
+      <div class="my-2 bg-${color}-50 rounded-lg py-1 px-1">
+        <div class="flex justify-between items-center">
+            <button onclick="copy('${account.account_number}')"><span class="fa text-${color}-400 fa-copy"></span></button>
+             <span class="text-${color}-700 font-black text-[16px] md:text-xl tracking-[0.2em]">${account.account_number}</span>
+        </div>
+  
+      </div>
+
+      <div class="text-[11px] text-${color}-900 font-semibold space-y-1">
+        <div class="flex items-center gap-2">
+           <span class="text-${color}-400">●</span>
+           <span>الاسم: ${account.account_name}</span>
+        </div>
+      
+    </div>
+    </div>
+
+    <div class="absolute top-0 right-0 h-2 w-1/2 bg-${color}-700 rounded-bl-full"></div>
+  </div>
+
+                
+                `
+
+            
+
+            
+
+
+          
+
+            
+
+            
+
+
+            container.setAttribute("ac-name",account.wallet_name||"")
+            container.setAttribute("ac-number",account.account_number||"")
+            container.innerHTML=element
+
+        
+        }
+
+
+        
+        function runderAccounts(accounts){
+            console.log(accounts)
+            const container=document.getElementById("account-container")
+            const how=document.createElement("div")
+            how.classList.add("mb-4","pb-2","flex","justify-between",'w-full',"flex-col","md:flex-row","gap-10")
+
+            function renderAc(ele){
+
+
+                
+            const howtobooking=`
+
+ 
+            
+<div>
+<div class="text-primary-light font-bold my-1">طريقة الحجز:</div>
+<ul classe="mb-4"> 
+<li class="text-[12px]"> رسالة تحتوي على تاريخ المناسبة مع موقع المناسبة</li>
+<li class="text-[12px]">
+تسليم عربون نص المبلغ عبر حسابات</li>
+
+<li>${ele}</li>
 
  </ul>
 </div>
@@ -107,7 +1472,754 @@
 </ul>
 </div>
 
-</div></div>
+`
+
+
+
+                return howtobooking
+                
+            }
+
+            let elements=accounts.map(account=>{
+
+                let isKurimi=account.wallet_name.includes("كريمي")
+                let account_properties={
+                    intent_link:isKurimi?"android-app://com.KuraimiBank":"android-app://com.ahd.jaib",
+                    fallbackBrowser:`S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3D${isKurimi?"com.KuraimiBank;":"com.ahd.jaib;"}`,
+                    color:isKurimi?"purple":"red",
+                    logo:isKurimi?"kur.png":"jaib.png",
+                  
+                }
+// ${account_properties.fallbackBrowser}
+                let intent=`
+                
+                <a class="bg-${account_properties.color}-500 text-white rounded-lg p-1 my-1 " href="${account_properties.intent_link}">
+  فتح تطبيق 
+</a>
+
+                `
+
+                let color=account_properties.color
+                let logo=account_properties.logo
+
+
+                return `
+<div class="relative mt-1 w-full max-w-md bg-white border-4 border-${color}-700 rounded-2xl overflow-hidden shadow-2xl flex flex-row-reverse pl-2 pr-1 font-['Tajawal']" dir="rtl">
     
-</body>
-</html>
+    <div class="w-1/3 flex flex-col items-center justify-center border-l-2 border-gray-100 pl-2">
+      <div class="bg-white p-1 border-2 border-${color}-200 rounded-lg">
+        <img src="assets/logo/${logo}" alt="QR Code" class="w-20 h-20">
+      </div>
+    </div>
+
+    <div class="w-2/3 pr-1 flex flex-col justify-between text-right">
+      <div>
+        <h2 class="text-${color}-800 my-1 text-lg font-bold mb-1">حساب ${account.wallet_name}</h2>
+      </div>
+
+      <div class="my-2 bg-${color}-50 rounded-lg py-1 px-3">
+        <div class="flex justify-between items-center">
+            <button onclick="copy('${account.account_number}')"><span class="fa text-${color}-400 fa-copy"></span></button>
+             <span class="text-${color}-700 font-black text-xl tracking-[0.2em]">${account.account_number}</span>
+        </div>
+  
+      </div>
+
+      <div class="text-[11px] text-${color}-900 font-semibold space-y-1">
+        <div class="flex items-center gap-2">
+           <span class="text-${color}-400">●</span>
+           <span>الاسم: ${account.account_name}</span>
+        </div>
+      
+    </div>
+    </div>
+
+    <div class="absolute top-0 right-0 h-2 w-1/2 bg-${color}-700 rounded-bl-full"></div>
+  </div>
+
+                
+                `
+
+            }
+
+            
+
+
+            ).join("<div>أو:</div>")
+
+            how.innerHTML=renderAc(elements)
+
+            
+
+
+
+            container.appendChild(how)
+
+
+        }
+
+
+        function buildPackageTabs(packages, onChange) {
+    const tabsContainer = document.getElementById("packages-tabs");
+    tabsContainer.innerHTML = "";
+
+    // استخراج الأنواع بدون تكرار
+    const types = [
+        ...new Map(packages.map(p => [p.type.key, p.type])).values()
+    ];
+
+    // زر "الكل"
+    types.unshift({ key: "all", name: "الكل" });
+
+    types.forEach((type, index) => {
+        const btn = document.createElement("button");
+
+        btn.textContent = type.name;
+        btn.dataset.key = type.key;
+
+        btn.className = `
+            px-2 py-1 mx-1 rounded-lg border
+            ${index === 0
+                ? "bg-primary text-white"
+                : "border-primary/40 text-white/70 hover:bg-primary/20"}
+            transition
+        `;
+
+        btn.onclick = () => {
+            document.querySelectorAll("#packages-tabs button")
+                .forEach(b => {
+                    b.classList.remove("bg-primary", "text-white");
+                    b.classList.add("text-white/70");
+                });
+
+            btn.classList.add("bg-primary", "text-white");
+
+            onChange(type.key);
+        };
+
+        tabsContainer.appendChild(btn);
+    });
+}
+
+
+function filterPackagesByType(packages, typeKey) {
+    if (typeKey === "all") return packages;
+    return packages.filter(p => p.type.key === typeKey);
+}
+
+
+         function renderPackages2(packages,photographer=null) {
+            const container = document.getElementById('packages-grid');
+            container.innerHTML = '';
+
+            packages.forEach(pkg => {
+                const card = document.createElement('div');
+                card.className = 'package-card flex justify-between flex-col overflow-hidden';
+
+               
+                const badgeColorMap = {
+  gold: 'bg-gold/70 text-white',
+  blue: 'bg-blue-500 text-white',
+  red: 'bg-red-500 text-white',
+  green: 'bg-green-500 text-white',
+};
+
+                // let badgeHTML = pkg.badge ? `<div class="badge">${pkg.badge}</div>` : '';
+                let badgeHTML = pkg.type.name ? `<div class="badge ${badgeColorMap[pkg.type.badgeColor||"red"]} ">${pkg.type.name}</div>` : '';
+
+
+                // console.log(pkg.featuresGrid.items)
+
+                function runderRows(title_f){
+                   const {title,features}= pkg.featuresGrid.items.filter(i=>i.title==title_f)[0]
+                   if(title && features){
+
+
+                    
+                    return `
+                    <div class="flex flex-col" >
+                        ${features.map((cell, cellIdx) => `
+                            <div class=" p-1 flex gap-2 text-white text-right ${cellIdx % 2 === 0 ? 'highlight' : ''}">
+                               <div>-</div> <div class=" flex-1 break-words overflow-wrap-anywhere">${cell}</div> 
+                            </div>
+                        `).join('')}
+                    </div>
+                    `
+
+                   }
+
+
+
+                }
+
+
+function renderBooking(booking){
+                    if (booking.title){
+
+            return `
+                    <div class="info-box">
+                                <div class="info-box-header border-b-1 border-b-primary">
+                                    <i class="fas fa-calendar-check"></i>
+                                    ${booking.title}
+                                </div>
+                                <ul>
+                                    ${booking.items.map(item => `<li class="flex-1 break-words overflow-wrap-anywhere">${item}</li>`).join('')}
+                                </ul>
+                    </div>
+                    `
+                    }
+                    else return ""
+                
+                }
+
+
+
+function rendernotes(notes){
+                    if (notes.title){
+
+            return `
+                     <div class="info-box">
+                                <div class="info-box-header">
+                                    <i class="fas fa-info-circle"></i>
+                                    ${notes.title}
+                                </div>
+                                <ul>
+                                    ${notes.items.map(item => `<li class="flex-1 break-words overflow-wrap-anywhere">${item}</li>`).join('')}
+                                </ul>
+                            </div>
+                    `
+                    }
+                    else return ""
+                
+                }
+
+
+                let gridcolsize="grid-cols-1";
+
+                if(pkg.booking.title!=null&&pkg.notes.title!=null)
+                gridcolsize="grid-cols-2"
+               
+
+                let socialLinksHTML = '';
+                if (pkg.footer.social) {
+                    const icons = {
+                        instagram: 'fab fa-instagram',
+                        sms: 'fas fa-envelope',
+                        phone:'fa fa-phone',
+
+                        whatsapp: 'fab fa-whatsapp',
+                        twitter: 'fab fa-twitter',
+                        snapchat: 'fab fa-snapchat-ghost',
+                        tiktok: 'fab fa-tiktok'
+                    };
+
+
+                   function genline(length, char = "=") {
+    return char.repeat(length);
+}
+const finalPrice = pkg.is_discount ? calculateDiscountedPrice(pkg.price, pkg.discount_percent) : pkg.price;
+
+const message = `مرحبا ${photographer.name}
+${genline(30)}
+أرغب بطلب: (${pkg.title})
+السعر: ${finalPrice} ${pkg.currency}
+${genline(30)}
+مميزات الباقة:
+${pkg.featuresGrid.items.map(f =>{
+return `${genline("مميزات الباقة:".length)}
+*(${f.title})*:
+${f.features.map((fe,i)=>` - ${fe}${i==f.features.length-1?'':'\n'}`).join("")}
+`
+} ).join('')}`;
+
+pkg.footer.text="لطلب الباقه عبر "
+                    let letSocial={
+                        sms:generateSmsURL(photographer.phone,message),
+                        whatsapp:generateWhatsAppURL(photographer.phone,message),
+                        phone:`tel:${photographer.phone.slice(3)}`
+
+                    }
+                    
+                    socialLinksHTML = Object.entries(letSocial).map(([platform, link]) => `
+                        <a href="${link}" class="social-link" title="${platform}">
+                            <i class="${icons[platform] || 'fas fa-link'}"></i>
+                        </a>
+                    `).join('');
+                }
+
+                const finalPrice = pkg.is_discount ? calculateDiscountedPrice(pkg.price, pkg.discount_percent) : pkg.price;
+
+                card.innerHTML = `
+                    ${badgeHTML}
+
+                    
+                    <div class="card-header">
+                    ${pkg.is_discount ? `<div class="discount-badge">خصم ${pkg.discount_percent}%</div>` : ''}
+                    ${pkg.is_popular ? `<div class="popular-badge"><i class="fas fa-star ml-1"></i>الأكثر طلباً</div>` : ''}
+
+                        <i class="fas ${pkg.logoIcon} logo-watermark"></i>
+                        <h2 class="package-title">${pkg.title}</h2>
+
+
+                        <div class="package-price">
+                            <span class="price-value ${pkg.is_discount?"line-through decoration-red-500/50 relative top-2 text-[1.5rem]":""} ">${pkg.price.toLocaleString('ar-SA')}</span>
+                            <span class="price-currency ${pkg.is_discount?"text-[10px]":""}">${pkg.currency}</span>
+
+                              ${pkg.is_discount?`
+                              <span class="price-value  ">${finalPrice.toLocaleString('ar-SA')}</span>
+                            <span class="price-currency">${pkg.currency}</span>
+
+                              `:""}                          
+
+                        </div>
+
+                    <div class="card-details rounded-lg ${pkg.details.time==null&&pkg.details.location==null?"hidden":""} ">
+                        <div class="detail-item  ${pkg.details.time==null?"hidden":""}">
+                            <i class="far fa-clock"></i>
+                            <span>${pkg.details.time}</span>
+                        </div>
+                        <div class="detail-item ${pkg.details.location==null?"hidden":""}">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>${pkg.details.location}</span>
+                        </div>
+                    </div>
+
+                    </div>
+
+                    
+
+                    <div class="my-2 flex-1 max-h-[268px] rounded-lg overflow-y-auto">
+
+                        <div class="grid grid-cols-${pkg.featuresGrid.items.length>2?"3":pkg.featuresGrid.items.length}  my-2 px-1">
+                        ${pkg.featuresGrid.items.map((col,i) => `
+                        <div class="  ${i%2==0?"bg-primary/10":"bg-primary/20"} " >
+                            
+                            <div class="text-[16px] max-h-[40px] h-[40px] min-h-[40px] p-2 overflow-hidden  ${i%2==0?"bg-primary/90":"bg-primary"} font-bold text-right text-white">${col.title}</div>
+                            <div class="text-gray-600 text-[12px]  break-words overflow-wrap-anywhere text-sm ">${runderRows(col.title)}</div>
+                        
+                        </div>
+      `).join('')}
+      </div>
+
+                        <div class="info-section grid  ${gridcolsize} gap-2 mx-2">
+                           
+                        ${renderBooking(pkg.booking)}
+                        ${rendernotes(pkg.notes)}
+                            
+                           
+                        </div>     
+                    </div>
+
+                    <div class="card-footer flex flex-col gap-3">
+                        <button onclick="orderPackage(${pkg.id})" class="w-full bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 rounded-lg flex items-center justify-center gap-2 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                            <i class="fas fa-shopping-cart"></i>
+                            طلب الباقة
+                        </button>
+                        <div class="footer-content hidden justify-between w-full">
+                            <span class="footer-text text-xs">${pkg.footer.text}</span>
+                            <div class="social-links">
+                                ${socialLinksHTML}
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+                container.appendChild(card);
+            });
+        }
+
+        // ========== PACKAGES ==========
+        function renderPackages(Packages) {
+            const grid = document.getElementById('packages-grid');
+
+            grid.innerHTML = Packages.map((pkg, index) => {
+                const finalPrice = pkg.isDiscount ? calculateDiscountedPrice(pkg.price, pkg.discount_percent) : pkg.price;
+
+                return `
+                    <div class="package-card ${pkg.isPopular ? 'popular' : ''} ${pkg.isVip ? 'vip' : ''} rounded-2xl p-6 flex flex-col opacity-0 animate-fade-in-up"
+                         style="animation-delay: ${index * 0.15}s">
+                        ${pkg.isDiscount ? `<div class="discount-badge">خصم ${pkg.discount_percent}%</div>` : ''}
+                        ${pkg.isPopular ? `<div class="popular-badge"><i class="fas fa-star ml-1"></i>الأكثر طلباً</div>` : ''}
+
+                        ${pkg.image ? `
+                            <div class="mb-4 -mx-6 -mt-6">
+                                <img src="${pkg.image}" alt="${pkg.name}" class="w-full h-40 object-cover rounded-t-2xl">
+                            </div>
+                        ` : ''}
+
+                        <div class="text-center mb-4">
+                            ${pkg.isVip ? '<i class="fas fa-crown text-accent text-3xl mb-2"></i>' : ''}
+                            <h3 class="text-xl font-bold ${pkg.isVip ? 'text-accent' : 'text-white'}">${pkg.name}</h3>
+                        </div>
+
+                        <div class="text-center mb-6">
+                            ${pkg.isDiscount ? `<span class="text-white/40 line-through text-lg">${pkg.price} ${pkg.currency}</span>` : ''}
+                            <div class="text-3xl font-bold ${pkg.isVip ? 'text-accent' : 'text-primary-light'}">
+                                ${finalPrice} <span class="text-lg">${pkg.currency}</span>
+                            </div>
+                        </div>
+
+                        <ul class="flex-1 space-y-3 mb-6">
+                            ${pkg.features.map(feature => `
+                                <li class="flex items-center gap-2 text-white/80">
+                                    <i class="fas fa-check text-primary text-sm"></i>
+                                    <span>${feature}</span>
+                                </li>
+                            `).join('')}
+                        </ul>
+
+                        <button onclick="orderPackage(${pkg.id})"
+                                class="w-full ${pkg.isVip ? 'bg-gradient-to-r from-accent to-accent-dark' : 'btn-whatsapp'} py-3 rounded-xl text-white font-bold flex items-center justify-center gap-2 hover:transform hover:scale-105 transition-all">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                            طلب الباقة
+                        </button>
+                    </div>
+                `;
+            }).join('');
+        }
+
+
+
+        // ========== HOW WE WORK ==========
+        function renderSteps() {
+            const container = document.getElementById('steps-container');
+
+            container.innerHTML = HowWeWork.map((step, index) => `
+                <div class="step-card text-center opacity-0 animate-fade-in-up" style="animation-delay: ${index * 0.1}s">
+                    <div class="step-number">
+                        <i class="fas ${step.icon}"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">${step.title}</h3>
+                    <p class="text-white/60 text-sm">${step.description}</p>
+                    ${index < HowWeWork.length - 1 ? `
+                        <div class="hidden lg:block absolute top-8 -left-8 text-primary/30">
+                            <i class="fas fa-arrow-left text-2xl"></i>
+                        </div>
+                    ` : ''}
+                </div>
+            `).join('');
+        }
+
+        // ========== ABOUT/PHOTOGRAPHER ==========
+        async function renderPhotographerInfo() {
+
+            // document.getElementById('profile-image').src = PhotographerInfo.profile_pic;
+            // document.getElementById('photographer-name').textContent = PhotographerInfo.name;
+            document.getElementById('photographer-description').textContent = PhotographerInfo.description;
+            document.getElementById('photographer-location').textContent = PhotographerInfo.location;
+            document.getElementById('photographer-email').textContent = PhotographerInfo.email;
+            document.getElementById('hero-description').textContent = PhotographerInfo.description.substring(0, 100) + '...';
+            document.getElementById('header-logo-text').textContent = PhotographerInfo.name;
+            document.getElementById('footer-name').textContent = PhotographerInfo.name;
+
+            // Social Links
+            const socialContainer = document.getElementById('social-links');
+            const footerSocial = document.getElementById('footer-social');
+
+            const socialLinks = [
+                { platform: 'whatsapp', url: `https://wa.me/${PhotographerInfo.whatsapp.replace(/[^0-9]/g, '')}`, icon: 'fab fa-whatsapp' },
+                { platform: 'instagram', url: `https://instagram.com/${PhotographerInfo.instagram}`, icon: 'fab fa-instagram' },
+                { platform: 'facebook', url: `https://facebook.com/${PhotographerInfo.facebook}`, icon: 'fab fa-facebook-f' },
+                { platform: 'email', url: `mailto:${PhotographerInfo.email}`, icon: 'fas fa-envelope' }
+            ];
+
+            socialLinks.forEach(link => {
+                const a = document.createElement('a');
+                a.href = link.url;
+                a.target = '_blank';
+                a.className = 'social-link text-white';
+                a.innerHTML = `<i class="${link.icon}"></i>`;
+                socialContainer.appendChild(a);
+
+                const footerLink = a.cloneNode(true);
+                footerSocial.appendChild(footerLink);
+            });
+
+            // Contact section
+            document.getElementById('contact-whatsapp').href = `https://wa.me/${PhotographerInfo.whatsapp.replace(/[^0-9]/g, '')}`;
+            document.getElementById('contact-whatsapp-number').textContent = PhotographerInfo.whatsapp;
+            document.getElementById('contact-email-link').href = `mailto:${PhotographerInfo.email}`;
+            document.getElementById('contact-email-text').textContent = PhotographerInfo.email;
+            document.getElementById('quick-contact-btn').href = generateWhatsAppURL(PhotographerInfo.whatsapp, `مرحبا ${PhotographerInfo.name}، أود الاستفسار عن خدمات التصوير.`);
+        }
+
+        // ========== POLICIES ==========
+        function renderPolicies() {
+            const container = document.getElementById('policies-accordion');
+
+            container.innerHTML = Policies.map((policy, index) => `
+                <div class="accordion-item opacity-0 animate-fade-in-up" style="animation-delay: ${index * 0.1}s">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h3 class="font-bold text-lg">${policy.title}</h3>
+                        <i class="fas fa-chevron-down accordion-icon transition-transform"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="p-4 text-white/70 leading-relaxed">
+                            ${policy.content}
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+
+
+        function toggleAccordion(header) {
+            const item = header.parentElement;
+            item.classList.toggle('active');
+        }
+
+        // ========== ORDER MODAL LOGIC ==========
+        let currentPackage = null;
+        let selectedPaymentMethod = 'kurimi'; // default
+
+        async function orderPackage(packageId) {
+            // Fetch latest data to ensure we have correct info
+            const Packages = await fetchData("packages_v2");
+            currentPackage = Packages.find(p => p.id === packageId); // Note: verify ID matching (string vs int) if needed
+            
+            // If not found in v2, try to find in the rendered list logic or pass object directly if easiest.
+            // For now assuming ID matches.
+            
+            if (!currentPackage) {
+                console.error("Package not found");
+                return;
+            }
+
+            // Populate Modal
+            document.getElementById('modal-package-name').textContent = currentPackage.title;
+            document.getElementById('modal-package-type').textContent = currentPackage.type.name;
+
+            const finalPrice = currentPackage.is_discount 
+                ? calculateDiscountedPrice(currentPackage.price, currentPackage.discount_percent) 
+                : currentPackage.price;
+            document.getElementById('modal-package-price').textContent = `${finalPrice.toLocaleString('ar-SA')} ${currentPackage.currency}`;
+
+            // Reset Fields
+            document.getElementById('order-location').value = '';
+            document.getElementById('order-date').value = '';
+            document.getElementById('order-notes').value = '';
+            document.getElementById("clock_plus").checked=false
+            document.getElementById("clock_number").value=''
+
+            setPaymentMethod('kurimi');
+
+            // Show Modal
+            const modal = document.getElementById('order-modal');
+            modal.classList.remove('hidden');
+            // Animate in
+            modal.querySelector('div[class*="transform"]').classList.remove('scale-95', 'opacity-0');
+            modal.querySelector('div[class*="transform"]').classList.add('scale-100', 'opacity-100');
+        }
+
+        function closeOrderModal() {
+            const modal = document.getElementById('order-modal');
+            modal.classList.add('hidden');
+        }
+
+       async function setPaymentMethod(method) {
+            selectedPaymentMethod = method;
+
+            let key=method=="kurimi"?"كريمي":"جيب"
+            const photographer= await fetchData("photographer_info")
+            let account=photographer.payments_accounts.filter(ac=>ac.wallet_name==key)
+            
+
+            
+            const btnKurimi = document.getElementById('btn-kurimi');
+            const btnJeeb = document.getElementById('btn-jeeb');
+
+            if (method === 'kurimi') {
+
+                runderacount(account)
+                btnKurimi.classList.add('bg-primary', 'text-white', 'shadow-lg');
+                btnKurimi.classList.remove('text-white/50', 'hover:bg-white/5');
+                
+                btnJeeb.classList.remove('bg-red-600', 'text-white', 'shadow-lg'); // Assuming Jeeb color logic, or just neutral
+                btnJeeb.classList.add('text-white/50', 'hover:bg-white/5');
+            } else {
+                runderacount(account)
+                btnJeeb.classList.add('bg-red-600', 'text-white', 'shadow-lg');
+                btnJeeb.classList.remove('text-white/50', 'hover:bg-white/5');
+
+                btnKurimi.classList.remove('bg-primary', 'text-white', 'shadow-lg');
+                btnKurimi.classList.add('text-white/50', 'hover:bg-white/5');
+            }
+        }
+
+        async function submitOrder(method) {
+            if (!currentPackage) return;
+            
+            const PhotographerInfo = await fetchData("photographer_info");
+            
+
+
+            const clock_plus=document.getElementById("clock_plus").checked
+            const clock_number=document.getElementById("clock_number").value
+
+            const location = document.getElementById('order-location').value;
+            const date = document.getElementById('order-date').value;
+            const notes = document.getElementById('order-notes').value;
+            const container=document.getElementById("accountmethod")
+
+            const acName = container.getAttribute("ac-name")
+            const acNumber = container.getAttribute("ac-number")
+
+
+            
+            let validationErrors = [];
+            if(!location) validationErrors.push("يرجى تحديد موقع المناسبة");
+            if(!date) validationErrors.push("يرجى تحديد تاريخ المناسبة");
+
+            if(validationErrors.length > 0) {
+                alert(validationErrors.join("\n"));
+                return;
+            }
+
+            const finalPrice = currentPackage.is_discount 
+                ? calculateDiscountedPrice(currentPackage.price, currentPackage.discount_percent) 
+                : currentPackage.price;
+
+            const type_package=currentPackage.type.name
+
+            const paymentText = selectedPaymentMethod === 'kurimi' ? 'كريمي' : 'جيب';
+
+            const message = `مرحبا ${PhotographerInfo.name}
+${genline(29)}
+أرغب بطلب: (${currentPackage.title})
+فئة: (${type_package})
+${clock_plus?`ساعات اضافبة: ${clock_number} ساعة`:""}
+${clock_plus?`سعر الساعات الاضافيه: ${(clock_number * 10000)} ${currentPackage.currency}`:""}
+${currentPackage.is_discount?`يوجد خصم في الباقه بمقدار   ${currentPackage.discountPercent}%`:"" }
+السعر: ${finalPrice} ${currentPackage.currency}
+${clock_plus?`الاجمالي: ${finalPrice + (clock_number * 10000)} ${currentPackage.currency}`:""}
+${genline(29)}
+طريقة الدفع: ${paymentText}
+لرقم حسابك: ${acNumber}
+محفظة :${acName}
+${genline(29)}
+الموقع: ${location}
+التاريخ: ${date}
+${notes ? `ملاحظات: ${notes}` : ''}
+${genline(29)}
+مميزات الباقة:
+${currentPackage.featuresGrid.items.map(f => {
+return `${genline("مميزات الباقة:".length)}
+*(${f.title})*:
+${f.features.map((fe,i)=>` - ${fe}`).join("\n")}`
+}).join('\n\n')}`;
+
+            if(method=="whats"){
+                const url = generateWhatsAppURL(PhotographerInfo.whatsapp, message);
+            alert(`تم نسخ رقم الحساب يرجى  ارسال الرساله ثم الذهاب للدفع عبر ${acName}`)
+            navigator.clipboard.writeText(acNumber)
+
+                window.open(url, '_blank');
+            }
+            else if (method=="sms"){
+
+            const url = generateSmsURL(PhotographerInfo.phone.slice(3), message);
+               
+            alert(`تم نسخ رقم الحساب يرجى  ارسال الرساله ثم الذهاب للدفع عبر ${acName}`)
+            navigator.clipboard.writeText(acNumber)
+               
+                window.open(url, '_blank');
+
+                
+            }
+
+            
+            closeOrderModal();
+        }
+
+        // ========== INTERSECTION OBSERVER FOR ANIMATIONS ==========
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                }
+            });
+        }, observerOptions);
+
+        // ========== INITIALIZE ==========
+        document.addEventListener('DOMContentLoaded', async () => {
+        
+            const Packages= await fetchData("packages_v2")
+            const PhotographerInfo= await fetchData("photographer_info")
+
+            document.getElementById('header-logo-text').textContent = PhotographerInfo.name;
+
+
+
+            // runderAccounts(PhotographerInfo.payments_accounts||[])
+            
+            
+            // initHeroCarousel();
+            // initCategoryFilters();
+            // updateGallery();
+
+             buildPackageTabs(Packages, (typeKey) => {
+        const filtered = filterPackagesByType(Packages, typeKey);
+        renderPackages2(filtered, PhotographerInfo);
+    });
+
+            renderPackages2(Packages,PhotographerInfo);
+            // renderSteps();
+            // renderPhotographerInfo();
+            // renderPolicies();
+
+            // Observe animated elements
+            setTimeout(() => {
+                document.querySelectorAll('.animate-fade-in-up').forEach(el => {
+                    el.style.opacity = '1';
+                });
+            }, 100);
+        });
+    </script>
+
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>

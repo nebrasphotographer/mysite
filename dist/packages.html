@@ -191,11 +191,149 @@
     </section>
 
    
-    <div class="bg-purple-500 hidden
+    <div class="bg-purple-500 hidden text-purple-400"></div>
+
+    <!-- Order Modal -->
+    <div id="order-modal" class="fixed py-4 inset-0 z-[100] hidden">
+        <!-- Backdrop -->
+        <div class="absolute inset-0 bg-black/80 backdrop-blur-sm" onclick="closeOrderModal()"></div>
+        
+        <!-- Modal Content -->
+        <div id="order-modal-content" class="absolute max-h-[80vh] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-md bg-zinc-900 border border-white/10 rounded-2xl shadow-2xl overflow-y-auto">
+            <!-- Header -->
+            <div class="bg-zinc-800 z-50 p-4 sticky top-0 flex items-center justify-between border-b border-white/5">
+                <h3 class="text-xl font-bold text-white">طلب باقة</h3>
+                <button onclick="closeOrderModal()" class="text-white/50 hover:text-white transition-colors">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+
+            <!-- Body -->
+            <div id="modal-body" class="p-6 space-y-6  overflow-y-auto">
+
+
+
+                <!-- Package Info -->
+                <div class="bg-primary/10 rounded-xl p-4 border border-primary/20">
+                    <h4 id="modal-package-name" class="font-bold text-lg text-primary-light mb-1"></h4>
+                    <h4 id="modal-package-type" class="font-bold text-sm text-primary-light mb-1"></h4>
+
+                    <p id="modal-package-price" class="text-white/80 font-mono"></p>
+
+<div> 
+<div class="text-primary-light text-[14px] text-align-center font-bold my-1">شروط الحجز الحجز:</div>
+<ul classe="mb-4"> 
+<li class="text-[12px]"><span class="text-red-500 text-[14px]">*</span> رسالة تحتوي على تاريخ المناسبة مع موقع المناسبة</li>
+<li class="text-[12px]">
+<span class="text-red-500 text-[14px]">*</span> تسليم عربون نص المبلغ عبر احد الحسابات ادناه</li>
+<li class="text-[12px]"><span class="text-red-500">*</span> تأكد من نسخ رقم الحساب  قبل ارسال الطلب</li>
+
+ </ul> 
+</div>
+                </div>
+
+                <!-- Payment Method Switch -->
+                <div class="space-y-3">
+                    <label class="block text-sm font-medium text-white/70">طريقة الدفع</label>
+                    <div class="flex bg-black/40 rounded-lg p-1 border border-white/5">
+                        <button onclick="setPaymentMethod('kurimi')" id="btn-kurimi" class="flex-1 py-2 px-4 rounded-md text-sm font-medium transition-all duration-300 flex items-center justify-center gap-2">
+                            <i class="fas fa-university"></i>
+                            كريمي
+                        </button>
+                        <button onclick="setPaymentMethod('jeeb')" id="btn-jeeb" class="flex-1 py-2 px-4 rounded-md text-sm font-medium transition-all duration-300 flex items-center justify-center gap-2">
+                            <i class="fas fa-wallet"></i>
+                            جيب
+                        </button>
+                    </div>
+
+                    <div id="accountmethod">
+
+                    </div>
+                </div>
+
+                <!-- Inputs -->
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-white/70 mb-2">موقع المناسبة</label>
+                        <div class="relative">
+                            <i class="fas fa-map-marker-alt absolute right-3 top-1/2 -translate-y-1/2 text-white/30"></i>
+                            <input type="text" id="order-location" class="w-full bg-black/40 border border-white/10 rounded-xl py-3 pr-10 pl-4 text-white placeholder-white/20 focus:outline-none focus:border-primary/50 transition-colors" placeholder="مثال: قاعة المراسيم">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-white/70 mb-2">تاريخ المناسبة</label>
+                        <div class="relative">
+                            <input type="date" id="order-date" class="w-full bg-black/40 border border-white/10 rounded-xl py-3 px-4 text-white focus:outline-none focus:border-primary/50 transition-colors scheme-dark">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-white/70 mb-2">ملاحظات إضافية</label>
+                        <textarea id="order-notes" rows="3" class="w-full bg-black/40 border border-white/10 rounded-xl py-3 px-4 text-white placeholder-white/20 focus:outline-none focus:border-primary/50 transition-colors resize-none" placeholder="أي تفاصيل أخرى تود إضافتها..."></textarea>
+                    </div>
+
+                    <div>
+ <p class="text-primary-light font-bold my-1">ملاحظات:</p>
+ <ul>
     
-    text-purple-400
-    
-    "></div>
+<div class="flex flex-col gap-1 border-primary my-2 p-1 rounded-lg border-[1px]">
+        <li class="text-[12px]"> سعر الساعة الإضافية ب 10 الف ريال</li>
+<div class="text-[12px] flex gap-2 ">
+<label for="clock_plus">اضافه ساعات اضافيه</label>
+<input type="checkbox" name="clock_plus" onchange="changeColck(this)" id="clock_plus">
+</div>
+
+<script>
+    function changeColck(e){
+        if(e.checked){
+            document.getElementById('clock_number_div').classList.remove('hidden')
+            document.getElementById('clock_number').setAttribute("required","true")
+
+        }else{
+            
+            document.getElementById('clock_number_div').classList.add('hidden')
+            document.getElementById('clock_number').removeAttribute("required")
+        }
+    }
+</script>
+
+<div id="clock_number_div" class="text-[12px] flex hidden gap-2 ">
+<label for="clock_number">عدد الساعات</label>
+<input type="number" class="w-1/2 bg-black/40 border border-white/10 rounded-lg py-1 px-4 text-white placeholder-white/20 focus:outline-none focus:border-primary/50 transition-colors" max="24" min="1" name="clock_number" id="clock_number">
+</div>
+
+    </div>
+
+<li class="text-[12px]">فترة تسليم الصور من شهر  الى شهرين </li>
+<li class="text-[12px]">تسليم الصور المستعجله خلال 10 ايام زيادة 10 الف.</li>
+<li class="text-[12px]">تصوير منفرد لغير الصور الجماعية زيادة 1000 ريال.</li>
+<li class="text-[12px]">يتم الاحتفاظ بنسخة من الصور لمدة ستة اشهر من تاريخ المناسبة.</li>
+</ul>
+</div>
+
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="p-4 bg-zinc-800/50 flex flex-col gap-2 p-2 my-2 border-t border-white/5">
+                <button onclick="submitOrder('whats')" class="w-full bg-green-600 hover:bg-green-500 text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2 transition-all transform active:scale-95 shadow-lg shadow-green-900/20">
+                    <i class="fab fa-whatsapp text-xl"></i>
+                    إرسال الطلب عبر واتساب
+                </button>
+
+                <button onclick="submitOrder('sms')" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2 transition-all transform active:scale-95 shadow-lg shadow-green-900/20">
+                    <i class="fab fa-envelope text-xl"></i>
+                    إرسال الطلب عبر sms
+                </button>
+
+                 <button onclick="closeOrderModal()" class="w-full bg-primary hover:bg-primary/50 text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2 transition-all transform active:scale-95 shadow-lg shadow-green-900/20">
+                    <i class="fab fa-close text-xl"></i>
+الغاء
+                </button>
+            </div>
+        </div>
+    </div>
 
    
     <!-- ==================== FOOTER ==================== -->
@@ -245,6 +383,13 @@
             const cleanPhone = phone.replace(/[^0-9]/g, '');
             const encodedMessage = encodeURIComponent(message);
             return `sms:${cleanPhone}?body=${encodedMessage}`;
+        }
+
+        function genline(length, char = "=") {
+             if (typeof length === 'string') {
+                length = length.length;
+             }
+             return char.repeat(length);
         }
 
         // ========== DARK MODE ==========
@@ -309,6 +454,83 @@
             });
         });
 
+
+
+          function runderacount(account){
+              const container=document.getElementById("accountmethod")
+              account=account[0]
+              console.log(account)
+            
+
+                let isKurimi=account.wallet_name.includes("كريمي")
+                console.log(isKurimi)
+                let account_properties={
+                    intent_link:isKurimi?"android-app://com.KuraimiBank":"android-app://com.ahd.jaib",
+                    fallbackBrowser:`S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3D${isKurimi?"com.KuraimiBank;":"com.ahd.jaib;"}`,
+                    color:isKurimi?"purple":"red",
+                    logo:isKurimi?"kur.png":"jaib.png",
+                  
+                }
+
+                let color=account_properties.color
+                let logo=account_properties.logo
+
+
+                let element= `
+<div class="relative mt-1 w-full max-w-md bg-white border-4 border-${color}-700 rounded-2xl overflow-hidden shadow-2xl flex flex-row-reverse pl-2 pr-1 font-['Tajawal']" dir="rtl">
+    
+    <div class="w-1/3 flex flex-col items-center justify-center border-l-2 border-gray-100 pl-1">
+      <div class="bg-white p-1 border-2 border-${color}-200 rounded-lg">
+        <img src="assets/logo/${logo}" alt="QR Code" class="w-20 h-20">
+      </div>
+    </div>
+
+    <div class="w-2/3 pr-1 flex flex-col justify-between text-right">
+      <div>
+        <h2 class="text-${color}-800 my-1 text-lg font-bold mb-1">حساب ${account.wallet_name}</h2>
+      </div>
+
+      <div class="my-2 bg-${color}-50 rounded-lg py-1 px-1">
+        <div class="flex justify-between items-center">
+            <button onclick="copy('${account.account_number}')"><span class="fa text-${color}-400 fa-copy"></span></button>
+             <span class="text-${color}-700 font-black text-[16px] md:text-xl tracking-[0.2em]">${account.account_number}</span>
+        </div>
+  
+      </div>
+
+      <div class="text-[11px] text-${color}-900 font-semibold space-y-1">
+        <div class="flex items-center gap-2">
+           <span class="text-${color}-400">●</span>
+           <span>الاسم: ${account.account_name}</span>
+        </div>
+      
+    </div>
+    </div>
+
+    <div class="absolute top-0 right-0 h-2 w-1/2 bg-${color}-700 rounded-bl-full"></div>
+  </div>
+
+                
+                `
+
+            
+
+            
+
+
+          
+
+            
+
+            
+
+
+            container.setAttribute("ac-name",account.wallet_name||"")
+            container.setAttribute("ac-number",account.account_number||"")
+            container.innerHTML=element
+
+        
+        }
 
 
         
@@ -673,7 +895,7 @@ pkg.footer.text="لطلب الباقه عبر "
                         <div class="  ${i%2==0?"bg-primary/10":"bg-primary/20"} " >
                             
                             <div class="text-[16px] max-h-[40px] h-[40px] min-h-[40px] p-2 overflow-hidden  ${i%2==0?"bg-primary/90":"bg-primary"} font-bold text-right text-white">${col.title}</div>
-                            <div class="text-gray-600 text-[10px]  break-words overflow-wrap-anywhere text-sm ">${runderRows(col.title)}</div>
+                            <div class="text-gray-600 text-[12px]  break-words overflow-wrap-anywhere text-sm ">${runderRows(col.title)}</div>
                         
                         </div>
       `).join('')}
@@ -688,9 +910,13 @@ pkg.footer.text="لطلب الباقه عبر "
                         </div>     
                     </div>
 
-                    <div class="card-footer">
-                        <div class="footer-content">
-                            <span class="footer-text">${pkg.footer.text}</span>
+                    <div class="card-footer flex flex-col gap-3">
+                        <button onclick="orderPackage(${pkg.id})" class="w-full bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 rounded-lg flex items-center justify-center gap-2 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                            <i class="fas fa-shopping-cart"></i>
+                            طلب الباقة
+                        </button>
+                        <div class="footer-content hidden justify-between w-full">
+                            <span class="footer-text text-xs">${pkg.footer.text}</span>
                             <div class="social-links">
                                 ${socialLinksHTML}
                             </div>
@@ -752,23 +978,7 @@ pkg.footer.text="لطلب الباقه عبر "
             }).join('');
         }
 
-      async function  orderPackage(packageId) {
-            let Packages=await fetchData("packages")
-            let PhotographerInfo=await fetchData("photographer_info")
-            const pkg = Packages.find(p => p.id === packageId);
-            if (!pkg) return;
 
-            const finalPrice = pkg.isDiscount ? calculateDiscountedPrice(pkg.price, pkg.discount_percent) : pkg.price;
-
-            const message = `مرحبا ${PhotographerInfo.name}
-أرغب بطلب ${pkg.name}
-السعر: ${finalPrice} ${pkg.currency}
-مميزات الباقة:
-${pkg.features.map(f => `- ${f}`).join('\n')}`;
-
-            const url = generateWhatsAppURL(PhotographerInfo.whatsapp, message);
-            window.open(url, '_blank');
-        }
 
         // ========== HOW WE WORK ==========
         function renderSteps() {
@@ -852,9 +1062,186 @@ ${pkg.features.map(f => `- ${f}`).join('\n')}`;
             `).join('');
         }
 
+
+
         function toggleAccordion(header) {
             const item = header.parentElement;
             item.classList.toggle('active');
+        }
+
+        // ========== ORDER MODAL LOGIC ==========
+        let currentPackage = null;
+        let selectedPaymentMethod = 'kurimi'; // default
+
+        async function orderPackage(packageId) {
+            // Fetch latest data to ensure we have correct info
+            const Packages = await fetchData("packages_v2");
+            currentPackage = Packages.find(p => p.id === packageId); // Note: verify ID matching (string vs int) if needed
+            
+            // If not found in v2, try to find in the rendered list logic or pass object directly if easiest.
+            // For now assuming ID matches.
+            
+            if (!currentPackage) {
+                console.error("Package not found");
+                return;
+            }
+
+            // Populate Modal
+            document.getElementById('order-modal-content').scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+            // document.getElementById('modal-body').scrollIntoView({
+            //     behavior:"smooth",block:"start"
+            // })
+            document.getElementById('modal-package-name').textContent = currentPackage.title;
+            document.getElementById('modal-package-type').textContent = currentPackage.type.name;
+
+            const finalPrice = currentPackage.is_discount 
+                ? calculateDiscountedPrice(currentPackage.price, currentPackage.discount_percent) 
+                : currentPackage.price;
+            document.getElementById('modal-package-price').textContent = `${finalPrice.toLocaleString('ar-SA')} ${currentPackage.currency}`;
+
+            // Reset Fields
+            document.getElementById('order-location').value = '';
+            document.getElementById('order-date').value = '';
+            document.getElementById('order-notes').value = '';
+            document.getElementById("clock_plus").checked=false
+            document.getElementById("clock_number").value=''
+
+            setPaymentMethod('kurimi');
+
+            // Show Modal
+            const modal = document.getElementById('order-modal');
+            modal.classList.remove('hidden');
+            // Animate in
+            modal.querySelector('div[class*="transform"]').classList.remove('scale-95', 'opacity-0');
+            modal.querySelector('div[class*="transform"]').classList.add('scale-100', 'opacity-100');
+
+        }
+
+        function closeOrderModal() {
+            const modal = document.getElementById('order-modal');
+             document.getElementById('order-modal-content').scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+            modal.classList.add('hidden');
+        }
+
+       async function setPaymentMethod(method) {
+            selectedPaymentMethod = method;
+
+            let key=method=="kurimi"?"كريمي":"جيب"
+            const photographer= await fetchData("photographer_info")
+            let account=photographer.payments_accounts.filter(ac=>ac.wallet_name==key)
+            
+
+            
+            const btnKurimi = document.getElementById('btn-kurimi');
+            const btnJeeb = document.getElementById('btn-jeeb');
+
+            if (method === 'kurimi') {
+
+                runderacount(account)
+                btnKurimi.classList.add('bg-primary', 'text-white', 'shadow-lg');
+                btnKurimi.classList.remove('text-white/50', 'hover:bg-white/5');
+                
+                btnJeeb.classList.remove('bg-red-600', 'text-white', 'shadow-lg'); // Assuming Jeeb color logic, or just neutral
+                btnJeeb.classList.add('text-white/50', 'hover:bg-white/5');
+            } else {
+                runderacount(account)
+                btnJeeb.classList.add('bg-red-600', 'text-white', 'shadow-lg');
+                btnJeeb.classList.remove('text-white/50', 'hover:bg-white/5');
+
+                btnKurimi.classList.remove('bg-primary', 'text-white', 'shadow-lg');
+                btnKurimi.classList.add('text-white/50', 'hover:bg-white/5');
+            }
+        }
+
+        async function submitOrder(method) {
+            if (!currentPackage) return;
+            
+            const PhotographerInfo = await fetchData("photographer_info");
+            
+
+
+            const clock_plus=document.getElementById("clock_plus").checked
+            const clock_number=document.getElementById("clock_number").value
+
+            const location = document.getElementById('order-location').value;
+            const date = document.getElementById('order-date').value;
+            const notes = document.getElementById('order-notes').value;
+            const container=document.getElementById("accountmethod")
+
+            const acName = container.getAttribute("ac-name")
+            const acNumber = container.getAttribute("ac-number")
+
+
+            
+            let validationErrors = [];
+            if(!location) validationErrors.push("يرجى تحديد موقع المناسبة");
+            if(!date) validationErrors.push("يرجى تحديد تاريخ المناسبة");
+
+            if(validationErrors.length > 0) {
+                alert(validationErrors.join("\n"));
+                return;
+            }
+
+            const finalPrice = currentPackage.is_discount 
+                ? calculateDiscountedPrice(currentPackage.price, currentPackage.discount_percent) 
+                : currentPackage.price;
+
+            const type_package=currentPackage.type.name
+
+            const paymentText = selectedPaymentMethod === 'kurimi' ? 'كريمي' : 'جيب';
+
+            const message = `مرحبا ${PhotographerInfo.name}
+${genline(29)}
+أرغب بطلب: (${currentPackage.title})
+فئة: (${type_package})
+${clock_plus?`ساعات اضافبة: ${clock_number} ساعة`:""}
+${clock_plus?`سعر الساعات الاضافيه: ${(clock_number * 10000)} ${currentPackage.currency}`:""}
+${currentPackage.is_discount?`يوجد خصم في الباقه بمقدار   ${currentPackage.discountPercent}%`:"" }
+السعر: ${finalPrice} ${currentPackage.currency}
+${clock_plus?`الاجمالي: ${finalPrice + (clock_number * 10000)} ${currentPackage.currency}`:""}
+${genline(29)}
+طريقة الدفع: ${paymentText}
+لرقم حسابك: ${acNumber}
+محفظة :${acName}
+${genline(29)}
+الموقع: ${location}
+التاريخ: ${date}
+${notes ? `ملاحظات: ${notes}` : ''}
+${genline(29)}
+مميزات الباقة:
+${currentPackage.featuresGrid.items.map(f => {
+return `${genline("مميزات الباقة:".length)}
+*(${f.title})*:
+${f.features.map((fe,i)=>` - ${fe}`).join("\n")}`
+}).join('\n\n')}`;
+
+            if(method=="whats"){
+                const url = generateWhatsAppURL(PhotographerInfo.whatsapp, message);
+            alert(`تم نسخ رقم الحساب يرجى  ارسال الرساله ثم الذهاب للدفع عبر ${acName}`)
+            navigator.clipboard.writeText(acNumber)
+
+                window.open(url, '_blank');
+            }
+            else if (method=="sms"){
+
+            const url = generateSmsURL(PhotographerInfo.phone.slice(3), message);
+               
+            alert(`تم نسخ رقم الحساب يرجى  ارسال الرساله ثم الذهاب للدفع عبر ${acName}`)
+            navigator.clipboard.writeText(acNumber)
+               
+                window.open(url, '_blank');
+
+                
+            }
+
+            
+            closeOrderModal();
         }
 
         // ========== INTERSECTION OBSERVER FOR ANIMATIONS ==========
@@ -881,7 +1268,7 @@ ${pkg.features.map(f => `- ${f}`).join('\n')}`;
 
 
 
-            runderAccounts(PhotographerInfo.payments_accounts||[])
+            // runderAccounts(PhotographerInfo.payments_accounts||[])
             
             
             // initHeroCarousel();
