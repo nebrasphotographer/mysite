@@ -1,18 +1,14 @@
 [
   {
-    "data": "/data/images/media_bwrtryh.json",
-    "name": "بورتريه"
-  },
-  {
-    "data": "/data/images/media_atfal.json",
-    "name": "اطفال"
-  },
-  {
-    "data": "/data/images/media_mntjat.json",
-    "name": "منتجات"
-  },
-  {
     "data": "/data/images/media_zfaf.json",
     "name": "زفاف"
+  },
+  {
+    "data": "/data/images/media_ayd_mylad.json",
+    "name": "عيد ميلاد"
+  },
+  {
+    "data": "/data/images/media_tkhrj.json",
+    "name": "تخرج"
   }
 ]

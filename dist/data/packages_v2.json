@@ -385,5 +385,127 @@
       "social": {}
     },
     "logoIcon": null
+  },
+  {
+    "type": {
+      "key": "weeding",
+      "name": "الزفاف",
+      "badgeColor": "gold"
+    },
+    "order": 4,
+    "title": "الباكج الخامس",
+    "price": 180000.0,
+    "currency": "ريال",
+    "badge": null,
+    "is_discount": false,
+    "discount_percent": 0,
+    "is_vip": false,
+    "is_popular": false,
+    "details": {
+      "time": "من 12:00 ظهرا إلى 9:00 مساءً",
+      "location": "اليمن  - اب"
+    },
+    "featuresGrid": {
+      "items": [
+        {
+          "title": "الصور",
+          "features": [
+            "لامحدود للعرس كامل"
+          ]
+        },
+        {
+          "title": "الفيديوهات",
+          "features": [
+            "تصوير فيديو كامل للعرس",
+            "تصوير فيديو رونين (مانع اهتزاز)",
+            "فيديو كليب ممنتج لتفاصيل العرس والعريسين",
+            "عرض الكليب على شاشتين"
+          ]
+        },
+        {
+          "title": "المميزات",
+          "features": [
+            "تعديل صور",
+            "البوم بأسماء العرسان يحتوي على 40 صورة مطبوعه مقاس A5 + صورة A4 مبروزة",
+            "تسليم الصور والفيدوهات داخل فلاش ميموري"
+          ]
+        }
+      ]
+    },
+    "booking": {
+      "title": null,
+      "items": []
+    },
+    "notes": {
+      "title": null,
+      "items": []
+    },
+    "footer": {
+      "text": null,
+      "social": {}
+    },
+    "logoIcon": null
+  },
+  {
+    "type": {
+      "key": "weeding",
+      "name": "الزفاف",
+      "badgeColor": "gold"
+    },
+    "order": 5,
+    "title": "الباكج السادس (VIP)",
+    "price": 250000.0,
+    "currency": "ريال",
+    "badge": "VIP",
+    "is_discount": false,
+    "discount_percent": 0,
+    "is_vip": true,
+    "is_popular": false,
+    "details": {
+      "time": "يوم كامل",
+      "location": "اليمن  - اب"
+    },
+    "featuresGrid": {
+      "items": [
+        {
+          "title": "الصور",
+          "features": [
+            "لامحدود للعرس كامل"
+          ]
+        },
+        {
+          "title": "الفيديوهات",
+          "features": [
+            "فيديو للعرس كامل",
+            "تصوير فيديو برونين (مانع الاهتزاز)",
+            "تصوير درون (جوي)",
+            "فيديو كليب ممنتج لتفاصيل العرس والعريسين"
+          ]
+        },
+        {
+          "title": "المميزات",
+          "features": [
+            "عرض الكليب على شاشتين",
+            "تعديل صور",
+            "صندوق بأسماء العرسان يحتوي على (البومين 40 صور مطبوعة مقاس A4 للعريسين",
+            "صور مقاس (A6) لتفاصيل العرس",
+            "فلاش ميموري"
+          ]
+        }
+      ]
+    },
+    "booking": {
+      "title": null,
+      "items": []
+    },
+    "notes": {
+      "title": null,
+      "items": []
+    },
+    "footer": {
+      "text": null,
+      "social": {}
+    },
+    "logoIcon": null
   }
 ]

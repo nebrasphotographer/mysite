@@ -669,7 +669,7 @@
     ];
 
     // زر "الكل"
-    types.unshift({ key: "all", name: "الكل" });
+    // types.unshift({ key: "all", name: "الكل" });
 
     types.forEach((type, index) => {
         const btn = document.createElement("button");
@@ -703,7 +703,7 @@
 
 
 function filterPackagesByType(packages, typeKey) {
-    if (typeKey === "all") return packages;
+    // if (typeKey === "all") return packages;
     return packages.filter(p => p.type.key === typeKey);
 }
 
@@ -1280,7 +1280,8 @@ ${f.features.map((fe,i)=>` - ${fe}`).join("\n")}`
         renderPackages2(filtered, PhotographerInfo);
     });
 
-            renderPackages2(Packages,PhotographerInfo);
+        const weedpacks=Packages.filter(p=>p.type.key=="weeding")
+            renderPackages2(weedpacks,PhotographerInfo);
             // renderSteps();
             // renderPhotographerInfo();
             // renderPolicies();

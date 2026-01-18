@@ -1,0 +1,171 @@
+[
+  {
+    "id": 53,
+    "name": "13",
+    "media_type": "image",
+    "category": [
+      "تخرج"
+    ],
+    "description": "",
+    "date": "2026-01-18",
+    "special": true,
+    "url": "/assets/images/13.jpeg",
+    "created_at": "2026-01-18 20:57:21.743427+00:00"
+  },
+  {
+    "id": 52,
+    "name": "12",
+    "media_type": "image",
+    "category": [
+      "تخرج"
+    ],
+    "description": "",
+    "date": "2026-01-18",
+    "special": true,
+    "url": "/assets/images/12.jpeg",
+    "created_at": "2026-01-18 20:57:03.780166+00:00"
+  },
+  {
+    "id": 51,
+    "name": "11",
+    "media_type": "image",
+    "category": [
+      "تخرج"
+    ],
+    "description": "",
+    "date": "2026-01-18",
+    "special": true,
+    "url": "/assets/images/11.jpeg",
+    "created_at": "2026-01-18 20:56:46.671585+00:00"
+  },
+  {
+    "id": 50,
+    "name": "10",
+    "media_type": "image",
+    "category": [
+      "تخرج"
+    ],
+    "description": "",
+    "date": "2026-01-18",
+    "special": true,
+    "url": "/assets/images/10_Uv2M5gw.jpeg",
+    "created_at": "2026-01-18 20:56:14.674620+00:00"
+  },
+  {
+    "id": 49,
+    "name": "9",
+    "media_type": "image",
+    "category": [
+      "تخرج"
+    ],
+    "description": "",
+    "date": "2026-01-18",
+    "special": true,
+    "url": "/assets/images/9_g5awqyI.jpeg",
+    "created_at": "2026-01-18 20:55:55.364699+00:00"
+  },
+  {
+    "id": 48,
+    "name": "8",
+    "media_type": "image",
+    "category": [
+      "تخرج"
+    ],
+    "description": "",
+    "date": "2026-01-18",
+    "special": true,
+    "url": "/assets/images/8_CkuVUy6.jpeg",
+    "created_at": "2026-01-18 20:55:39.597545+00:00"
+  },
+  {
+    "id": 47,
+    "name": "7",
+    "media_type": "image",
+    "category": [
+      "تخرج"
+    ],
+    "description": "",
+    "date": "2026-01-18",
+    "special": true,
+    "url": "/assets/images/7_oPsYjNa.jpeg",
+    "created_at": "2026-01-18 20:55:20.297948+00:00"
+  },
+  {
+    "id": 46,
+    "name": "6",
+    "media_type": "image",
+    "category": [
+      "تخرج"
+    ],
+    "description": "",
+    "date": "2026-01-18",
+    "special": true,
+    "url": "/assets/images/6_18T2pvQ.jpeg",
+    "created_at": "2026-01-18 20:55:00.223124+00:00"
+  },
+  {
+    "id": 45,
+    "name": "5",
+    "media_type": "image",
+    "category": [
+      "تخرج"
+    ],
+    "description": "",
+    "date": "2026-01-18",
+    "special": true,
+    "url": "/assets/images/5_33P93oQ.jpeg",
+    "created_at": "2026-01-18 20:54:42.661999+00:00"
+  },
+  {
+    "id": 44,
+    "name": "4",
+    "media_type": "image",
+    "category": [
+      "تخرج"
+    ],
+    "description": "",
+    "date": "2026-01-18",
+    "special": true,
+    "url": "/assets/images/4_5W0M4vb.jpeg",
+    "created_at": "2026-01-18 20:54:25.289406+00:00"
+  },
+  {
+    "id": 43,
+    "name": "3",
+    "media_type": "image",
+    "category": [
+      "تخرج"
+    ],
+    "description": "",
+    "date": "2026-01-18",
+    "special": true,
+    "url": "/assets/images/3_vsBe7SJ.jpeg",
+    "created_at": "2026-01-18 20:54:07.435007+00:00"
+  },
+  {
+    "id": 42,
+    "name": "2",
+    "media_type": "image",
+    "category": [
+      "تخرج"
+    ],
+    "description": "",
+    "date": "2026-01-18",
+    "special": true,
+    "url": "/assets/images/2_lxUH4py.jpeg",
+    "created_at": "2026-01-18 20:53:53.513095+00:00"
+  },
+  {
+    "id": 41,
+    "name": "1",
+    "media_type": "image",
+    "category": [
+      "تخرج"
+    ],
+    "description": "",
+    "date": "2026-01-18",
+    "special": true,
+    "url": "/assets/images/1_YIXeorl.jpeg",
+    "created_at": "2026-01-18 20:53:33.341788+00:00"
+  }
+]
