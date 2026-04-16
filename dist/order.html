@@ -1049,6 +1049,25 @@ pkg.footer.text="لطلب الباقه عبر "
 
         }
 
+
+        function setYears(years=2){
+
+            const dateInput = document.getElementById('order-date'); // تأكد من مطابقة الـ ID
+    
+    if (dateInput) {
+        const today = new Date();
+        const nextTwoYears = new Date();
+        nextTwoYears.setFullYear(today.getFullYear() + years);
+
+        // تنسيق التاريخ ليكون YYYY-MM-DD
+        const formatDate = (date) => date.toISOString().split('T')[0];
+
+        // تعيين الحد الأدنى (اليوم) والحد الأقصى (بعد سنتين)
+        dateInput.min = formatDate(today);
+        dateInput.max = formatDate(nextTwoYears);
+    }
+        }
+
         function performclick(url){
 
             let a=document.createElement("a")
@@ -1261,6 +1280,7 @@ if (pkgIdFromUrl) {
         // 4. استدعاء دالة الطلب
         // ملاحظة: دالتك orderPackage في الملف تتوقع ID وليس كائن الباقة كاملاً
         orderPackage(pkg); 
+        setYears(4);
     }
 }
 

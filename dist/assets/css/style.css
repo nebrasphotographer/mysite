@@ -581,6 +581,11 @@
   justify-content: center;
 }
 
+input[type="date"] {
+    /* تجعل الأيقونة باللون الأبيض إذا كانت الخلفية داكنة */
+    color-scheme: dark; 
+}
+
 .loader_cube {
   position: absolute;
   width: 100%;
