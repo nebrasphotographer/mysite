@@ -491,7 +491,7 @@
         // ========== ABOUT/PHOTOGRAPHER ==========
        async function renderPhotographerInfo() {
             const PhotographerInfo= await fetchData("photographer_info")
-            console.log(PhotographerInfo)
+            // console.log(PhotographerInfo)
             let pic=PhotographerInfo.profile_pic
             if (pic.includes("/media/")){
                 pic=pic.replace("/media/","/")

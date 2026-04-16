@@ -596,8 +596,8 @@
 
         function scrollinto(target_name){
             const target = document.getElementById(target_name);
-            console.log(target)
-            console.log("hhh")
+            // console.log(target)
+            // console.log("hhh")
 
             if (target) {
                     target.scrollTo({ behavior: 'smooth', top: 0 });
@@ -607,11 +607,11 @@
           function runderacount(account,container_method="accountmethod",append=false){
               const container=document.getElementById(container_method)
             //   account=account[0]
-              console.log(account)
+            //   console.log(account)
             
 
                 let isKurimi=account.wallet_name.includes("كريمي")
-                console.log(isKurimi)
+                // console.log(isKurimi)
                 let account_properties={
                     intent_link:isKurimi?"android-app://com.KuraimiBank":"android-app://com.ahd.jaib",
                     fallbackBrowser:`S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3D${isKurimi?"com.KuraimiBank;":"com.ahd.jaib;"}`,
@@ -684,7 +684,7 @@
 
         
         function runderAccounts(accounts){
-            console.log(accounts)
+            // console.log(accounts)
             const container=document.getElementById("account-container")
             const how=document.createElement("div")
             how.classList.add("mb-4","pb-2","flex","justify-between",'w-full',"flex-col","md:flex-row","gap-10")
@@ -1304,7 +1304,7 @@ if (photograper_info){
 
     if(Array.isArray(accounts)){
         accounts.forEach(ac=>{
-            console.log(ac)
+            // console.log(ac)
             runderacount(ac,"accountscont",true)
         })
     }
@@ -1329,7 +1329,7 @@ if (photograper_info){
 
             if (method === 'kurimi') {
 
-                console.log("this is in order",account);
+                // console.log("this is in order",account);
 
                 runderacount(account,"accountmethod")
                 btnKurimi.classList.add('bg-primary', 'text-white', 'shadow-lg');

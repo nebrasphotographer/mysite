@@ -270,11 +270,11 @@
 
            
            const featuredMedia = Media.filter(item=>item.special);
-           console.log("init",featuredMedia)
+        //    console.log("init",featuredMedia)
             
 
             featuredMedia.forEach((item, index) => {
-                console.log("index",index,":",item.url)
+                // console.log("index",index,":",item.url)
                 const slide = document.createElement('div');
                 slide.className = 'carousel-slide relative';
                 // slide.style.backgroundImage=`url(${item.url})`
@@ -371,7 +371,7 @@
             const categories = new Set();
 
              allCat.forEach(item=>{
-                console.log(item.name)
+                // console.log(item.name)
             categories.add(item.name)
         })
 
@@ -379,7 +379,7 @@
             //     item.category.forEach(cat => categories.add(cat));
             // });
             let arr=Array.from(categories)
-            console.log("arr:",arr)
+            // console.log("arr:",arr)
             return arr;
         }
 
@@ -398,7 +398,7 @@
         }
 
         async function filterByCategory(category) {
-            console.log(category,"cat")
+            // console.log(category,"cat")
             
             
             
@@ -411,7 +411,7 @@
             const all_cat=await fetchData("all_categories","images")
             const {data,name}=all_cat.filter(item=>item.name==category)[0]
             cleanname=data.replace("/data/images/","").replace(".json","")
-            console.log(cleanname)
+            // console.log(cleanname)
         }
         else{
             cleanname="all_media"
@@ -463,7 +463,7 @@
         }
 
         function renderGallery() {
-            console.log("filtered",filteredMedia)
+            // console.log("filtered",filteredMedia)
             const grid = document.getElementById('gallery-grid');
 
             if (currentView === 'grid') {

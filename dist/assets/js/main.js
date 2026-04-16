@@ -8,7 +8,7 @@
                     // جلب ملف محدد إذا تم تمرير الاسم
                     const response = await fetch(`/data/${parent}${spes}.json`);
                     const data = await response.json();
-                    console.log(`بيانات ${spes}:`, data);
+                    // console.log(`بيانات ${spes}:`, data);
                     return data;
                 }
                 else{
@@ -24,8 +24,8 @@
                 const packagesData = await packagesResponse.json();
 
                 // الآن يمكنك استخدام البيانات
-                console.log("بيانات المصور:", photographerData);
-                console.log("بيانات الباقات:", packagesData);
+                // console.log("بيانات المصور:", photographerData);
+                // console.log("بيانات الباقات:", packagesData);
                 
                 // عرض البيانات في الصفحة
                 // displayData(photographerData, packagesData);
