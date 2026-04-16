@@ -6,6 +6,7 @@
       "badgeColor": "gold"
     },
     "order": 0,
+    "id": 3,
     "title": "الباكج الاول",
     "price": 30000.0,
     "currency": "ريال",
@@ -55,6 +56,7 @@
       "badgeColor": "red"
     },
     "order": 0,
+    "id": 5,
     "title": "الباكج الاول",
     "price": 15000.0,
     "currency": "ريال",
@@ -104,6 +106,7 @@
       "badgeColor": "gold"
     },
     "order": 1,
+    "id": 2,
     "title": "الباكج الثاني",
     "price": 45000.0,
     "currency": "ريال",
@@ -159,6 +162,7 @@
       "badgeColor": "red"
     },
     "order": 1,
+    "id": 6,
     "title": "الباكج الثاني",
     "price": 25000.0,
     "currency": "ريال",
@@ -215,6 +219,7 @@
       "badgeColor": "gold"
     },
     "order": 2,
+    "id": 1,
     "title": "الباكج الثالث",
     "price": 70000.0,
     "currency": "ريال",
@@ -274,6 +279,7 @@
       "badgeColor": "red"
     },
     "order": 2,
+    "id": 7,
     "title": "الباكج الثالث",
     "price": 30000.0,
     "currency": "ريال",
@@ -331,6 +337,7 @@
       "badgeColor": "gold"
     },
     "order": 3,
+    "id": 4,
     "title": "الباكج الرابع",
     "price": 120000.0,
     "currency": "ريال",
@@ -393,6 +400,7 @@
       "badgeColor": "gold"
     },
     "order": 4,
+    "id": 8,
     "title": "الباكج الخامس",
     "price": 180000.0,
     "currency": "ريال",
@@ -453,6 +461,7 @@
       "badgeColor": "gold"
     },
     "order": 5,
+    "id": 9,
     "title": "الباكج السادس (VIP)",
     "price": 250000.0,
     "currency": "ريال",
