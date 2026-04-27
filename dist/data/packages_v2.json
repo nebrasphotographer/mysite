@@ -58,7 +58,7 @@
     "order": 0,
     "id": 5,
     "title": "الباكج الاول",
-    "price": 15000.0,
+    "price": 20000.0,
     "currency": "ريال",
     "badge": null,
     "is_discount": false,
@@ -81,6 +81,56 @@
           "title": "المميزات",
           "features": [
             "تسليم الصور بنفس اليوم"
+          ]
+        }
+      ]
+    },
+    "booking": {
+      "title": null,
+      "items": []
+    },
+    "notes": {
+      "title": null,
+      "items": []
+    },
+    "footer": {
+      "text": null,
+      "social": {}
+    },
+    "logoIcon": null
+  },
+  {
+    "type": {
+      "key": "engagement",
+      "name": "حفلات الخطوبة بالمنزل",
+      "badgeColor": "blue"
+    },
+    "order": 0,
+    "id": 10,
+    "title": "الباكج الاول",
+    "price": 30000.0,
+    "currency": "ريال",
+    "badge": null,
+    "is_discount": false,
+    "discount_percent": 0,
+    "is_vip": false,
+    "is_popular": false,
+    "details": {
+      "time": "ساعة فقط",
+      "location": "اليمن - إب"
+    },
+    "featuresGrid": {
+      "items": [
+        {
+          "title": "الصور",
+          "features": [
+            "صور غير محدود"
+          ]
+        },
+        {
+          "title": "المميزات",
+          "features": [
+            "تسليم بنفس اليوم"
           ]
         }
       ]
@@ -164,7 +214,7 @@
     "order": 1,
     "id": 6,
     "title": "الباكج الثاني",
-    "price": 25000.0,
+    "price": 35000.0,
     "currency": "ريال",
     "badge": null,
     "is_discount": false,
@@ -193,7 +243,65 @@
           "title": "المميزات",
           "features": [
             "تعديل صور",
-            "التسليم داخل فلاش ميموري"
+            "التسليم داخل فلاش ميموري",
+            "طباعة 10 صور"
+          ]
+        }
+      ]
+    },
+    "booking": {
+      "title": null,
+      "items": []
+    },
+    "notes": {
+      "title": null,
+      "items": []
+    },
+    "footer": {
+      "text": null,
+      "social": {}
+    },
+    "logoIcon": null
+  },
+  {
+    "type": {
+      "key": "engagement",
+      "name": "حفلات الخطوبة بالمنزل",
+      "badgeColor": "blue"
+    },
+    "order": 1,
+    "id": 11,
+    "title": "الباكج الثاني",
+    "price": 45000.0,
+    "currency": "ريال",
+    "badge": null,
+    "is_discount": false,
+    "discount_percent": 0,
+    "is_vip": false,
+    "is_popular": false,
+    "details": {
+      "time": "ساعتين  فقط",
+      "location": "اليمن  - اب"
+    },
+    "featuresGrid": {
+      "items": [
+        {
+          "title": "الصور",
+          "features": [
+            "غير محدودة"
+          ]
+        },
+        {
+          "title": "الفديوهات",
+          "features": [
+            "تصوير فيديو"
+          ]
+        },
+        {
+          "title": "المميزات",
+          "features": [
+            "تعديل بعض الصور",
+            "تسليم مع فلاش ميموري"
           ]
         }
       ]
@@ -281,7 +389,7 @@
     "order": 2,
     "id": 7,
     "title": "الباكج الثالث",
-    "price": 30000.0,
+    "price": 40000.0,
     "currency": "ريال",
     "badge": null,
     "is_discount": false,
@@ -311,7 +419,67 @@
           "features": [
             "تعديل صور",
             "طباعة 15 صوره مقاس A5",
-            "تسليم الصور داخل فلاش ميموري"
+            "تسليم الصور داخل فلاش ميموري",
+            "البوم مميز مقاس (A4) يحتوي على 40 صورة"
+          ]
+        }
+      ]
+    },
+    "booking": {
+      "title": null,
+      "items": []
+    },
+    "notes": {
+      "title": null,
+      "items": []
+    },
+    "footer": {
+      "text": null,
+      "social": {}
+    },
+    "logoIcon": null
+  },
+  {
+    "type": {
+      "key": "engagement",
+      "name": "حفلات الخطوبة بالمنزل",
+      "badgeColor": "blue"
+    },
+    "order": 2,
+    "id": 12,
+    "title": "الباكج الثالث",
+    "price": 70000.0,
+    "currency": "ريال",
+    "badge": null,
+    "is_discount": false,
+    "discount_percent": 0,
+    "is_vip": false,
+    "is_popular": false,
+    "details": {
+      "time": "5 - ساعات",
+      "location": "(تحديد الوقت حسب الطلب) اليمن - اب"
+    },
+    "featuresGrid": {
+      "items": [
+        {
+          "title": "الصور",
+          "features": [
+            "غير محدودة"
+          ]
+        },
+        {
+          "title": "الفيديوهات",
+          "features": [
+            "تصوير فيديو",
+            "فيديو مونتاج قصير"
+          ]
+        },
+        {
+          "title": "المميزات",
+          "features": [
+            "تعديل بعض الصور",
+            "ذاكرة",
+            "طباعة 15 صورة مقاس (A5)"
           ]
         }
       ]

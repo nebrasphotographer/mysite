@@ -257,7 +257,7 @@
                 </div>
 
                 <!-- Quick Contact Button -->
-                <a id="quick-contact-btn" href="#" target="_blank" class="btn-whatsapp inline-flex items-center gap-3 px-8 py-4 rounded-full text-white font-bold text-lg">
+                <a id="quick-contact-btn" href="#" target="_blank" class="btn-whatsapp inline-flex items-center gap-3 px-8 py-4 hidden rounded-full text-white font-bold text-lg">
                     <i class="fab fa-whatsapp text-2xl"></i>
                     تواصل معنا الآن
                 </a>
@@ -489,6 +489,12 @@
         }
 
         // ========== ABOUT/PHOTOGRAPHER ==========
+
+        function format_number(num){
+         return    num.replace(/\D/g, '')         // حذف أي رموز غير أرقام
+  .match(/.{1,3}/g)          // تقسيم كل 3 أرقام
+  .join('-')  +"+"
+        }
        async function renderPhotographerInfo() {
             const PhotographerInfo= await fetchData("photographer_info")
             // console.log(PhotographerInfo)
@@ -501,7 +507,7 @@
             document.getElementById('photographer-description').textContent = PhotographerInfo.description;
             document.getElementById('photographer-location').textContent = PhotographerInfo.location;
             document.getElementById('photographer-email').textContent = PhotographerInfo.email;
-            document.getElementById('hero-description').textContent = PhotographerInfo.description.substring(0, 100) + '...';
+            document.getElementById('hero-description').textContent =  PhotographerInfo.description.substring(0, 100) + '...';
             document.getElementById('header-logo-text').textContent = PhotographerInfo.name;
             document.getElementById('footer-name').textContent = PhotographerInfo.name;
 
@@ -532,9 +538,9 @@
 
             // Contact section
              document.getElementById('contact-phone').href = `tel:${PhotographerInfo.whatsapp.replace(/[^0-9]/g, '')}`;
-            document.getElementById('contact-phone-number').textContent = PhotographerInfo.whatsapp;
+            document.getElementById('contact-phone-number').textContent = format_number (PhotographerInfo.whatsapp);
             document.getElementById('contact-whatsapp').href = `https://wa.me/${PhotographerInfo.whatsapp.replace(/[^0-9]/g, '')}`;
-            document.getElementById('contact-whatsapp-number').textContent = PhotographerInfo.whatsapp;
+            document.getElementById('contact-whatsapp-number').textContent = format_number(PhotographerInfo.whatsapp) ;
             document.getElementById('contact-email-link').href = `mailto:${PhotographerInfo.email}`;
             document.getElementById('contact-email-text').textContent = PhotographerInfo.email;
             document.getElementById('quick-contact-btn').href = generateWhatsAppURL(PhotographerInfo.whatsapp, `مرحبا ${PhotographerInfo.name}، أود الاستفسار عن خدمات التصوير.`);
@@ -623,11 +629,26 @@
 
         }
 
+        function openJaibApp() {
+    const packageName = "com.KuraimiBank";
+    const appScheme = "KuraimiBank://"; // يجب التأكد من الـ scheme الصحيح
+    
+    const jaibIntent = `intent://#Intent;package=${packageName};scheme=${appScheme.split(":")[0]};end`;
+    // محاولة فتح التطبيق
+    window.location.href = jaibIntent;
+
+    // إذا لم يفتح التطبيق خلال ثانيتين، افتح المتجر
+    setTimeout(function() {
+        window.location.href = `https://play.google.com/store/apps/details?id=${packageName}`;
+    }, 2000);
+}
+
         // ========== INITIALIZE ==========
         document.addEventListener('DOMContentLoaded',async () => {
 
     
             
+            // openJaibApp();
 
 
             
