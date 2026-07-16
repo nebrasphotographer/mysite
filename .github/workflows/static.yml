@@ -1,0 +1,37 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # يتم التشغيل تلقائياً عند الدفع لفرع main
+
+# إعطاء التصاريح اللازمة لـ GitHub لرفع ملفات الموقع
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# منع عمليات النشر المتداخلة في نفس الوقت
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # السحر هنا: نحدد مجلد dist بدلاً من الجذر (root) لرفعه كأصول للموقع
+      - name: Upload website artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist' # هنا تخبر GitHub أن يبدأ موقعك من داخل مجلد dist مباشرة
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
