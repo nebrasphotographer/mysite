@@ -391,8 +391,8 @@
             const specialMedia=Media.filter(item=>{
                 
                 if(item.special){
-                    if(item.url.includes("/dist/assets/")){
-                        item.url=item.url.replace("/dist/assets/","assets/")
+                    if(item.url.includes("/assets/")){
+                        item.url=item.url.replace("/assets/","assets/")
                     }
 
                     return item

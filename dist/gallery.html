@@ -427,9 +427,9 @@
 
             
             const FixedMedia=Media.map(media=>{
-
-                if(media.url.includes("/dist/assets/")){
-                        media.url=media.url.replace("/dist/assets/","assets/")
+                
+                if(media.url.includes("/assets/")){
+                        media.url=media.url.replace("/assets/","assets/")
                     }
 
                     return media
