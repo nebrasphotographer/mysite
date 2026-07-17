@@ -502,6 +502,10 @@
             if (pic.includes("/media/")){
                 pic=pic.replace("/media/","/")
             }
+
+            if (pic.includes("/profile/")){
+                pic=pic.replace("/profile/","profile/")
+            }
             document.getElementById('profile-image').src = pic;
             document.getElementById('photographer-name').textContent = PhotographerInfo.name;
             document.getElementById('photographer-description').textContent = PhotographerInfo.description;
