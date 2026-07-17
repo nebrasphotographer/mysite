@@ -1,11 +1,11 @@
  {
 	    "name": "mysite",
 	    "compatibility_date": "2026-07-17",
-      "main": "./dist/index.html",
-     
 	    "assets": {
 	      "directory": "./dist",
-        "binding": "ASSETS"
+        "binding": "ASSETS",
+        "html_handling": "drop-trailing-slash",
+    "not_found_handling": "single-page-application"
 	    },
        
  "observability": {
