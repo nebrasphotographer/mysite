@@ -1,9 +1,11 @@
  {
 	    "name": "mysite",
 	    "compatibility_date": "2026-07-17",
+      "main": "./dist/index.html",
      
 	    "assets": {
-	      "directory": "./dist"
+	      "directory": "./dist",
+        "binding": "ASSETS"
 	    },
        
  "observability": {
