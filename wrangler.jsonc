@@ -6,11 +6,7 @@
        "site": {
     "bucket": "./dist" // Add the directory with your static assets!
   },
-	    "assets": {
-	      "directory": "./dist"
-     
-	    },
-       
+	    
  "observability": {
     "logs": {
       "enabled": true,
